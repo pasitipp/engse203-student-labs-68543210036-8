@@ -1,6 +1,6 @@
 {
   "week": "week-04",
-  "title": "React Components and State",
+  "title": "React Campus Service Request",
   "status": "submitted",
   "sourceOrigin": "course-starter",
   "originalRepoUrl": "",
@@ -8,5 +8,5 @@
   "pullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/4",
   "submissionTag": "lab-04-submission-v1",
   "testStatus": "pass",
-  "notes": ""
+  "notes": "React/Vite build output ต้องอยู่ใน publish/ ก่อนสร้าง Pages Hub"
 }
