@@ -49,18 +49,18 @@
   },
   {
     "week": "week-04",
-    "title": "React Campus Service Request",
-    "status": "draft",
+    "title": "React Components and State",
+    "status": "submitted",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "",
     "originalCommit": "",
-    "pullRequestUrl": "",
-    "submissionTag": "",
-    "testStatus": "not-tested",
-    "notes": "React/Vite build output ต้องอยู่ใน publish/ ก่อนสร้าง Pages Hub",
+    "pullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/1",
+    "submissionTag": "lab-04-submission-v1",
+    "testStatus": "pass",
+    "notes": "",
     "pageUrl": "https://GITHUB-USERNAME.github.io/engse203-student-labs-STUDENT-ID/labs/week-04/",
     "sourceUrl": "https://github.com/GITHUB-USERNAME/engse203-student-labs-STUDENT-ID/tree/lab/week-04/labs/week-04/source",
-    "hasPublish": false,
-    "sourceEntries": 0
+    "hasPublish": true,
+    "sourceEntries": 10
   }
 ]
