@@ -73,6 +73,16 @@ function DashboardPage() {
     }
   }
 
+  async function handleAcknowledge(requestId) {
+    try {
+      const nextRequests = updateRequestStatus(requestId, 'in-progress');
+      setRequests(nextRequests);
+      setNotice(`รับเรื่อง ${requestId} แล้ว`);
+    } catch (error) {
+      setNotice(error instanceof Error ? error.message : 'รับเรื่องไม่สำเร็จ');
+    }
+  }
+
   async function handleReset() {
     if (!window.confirm('ต้องการคืนข้อมูลตัวอย่างเริ่มต้นหรือไม่?')) return;
     try {
@@ -122,7 +132,7 @@ function DashboardPage() {
             {filteredRequests.length === 0 ? (
               <p>ไม่พบคำร้องที่ตรงกับการค้นหา</p>
             ) : (
-              <RequestList requests={filteredRequests} onDeleteRequest={handleDelete} />
+              <RequestList requests={filteredRequests} onDeleteRequest={handleDelete} onAcknowledge={handleAcknowledge} />
             )}
           </section>
         </>
