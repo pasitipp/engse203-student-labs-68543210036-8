@@ -75,7 +75,7 @@ function DashboardPage() {
 
   async function handleAcknowledge(requestId) {
     try {
-      const nextRequests = updateRequestStatus(requestId, 'in-progress');
+      const nextRequests = await updateRequestStatus(requestId, 'in-progress');
       setRequests(nextRequests);
       setNotice(`รับเรื่อง ${requestId} แล้ว`);
     } catch (error) {
