@@ -1,24 +1,11 @@
-## ENGSE203 Weekly LAB Submission
+## สรุปการเปลี่ยนแปลง
 
-- Week: `week-NN`
-- Student ID:
-- Pages URL:
-- Submission Tag/Commit:
+- 
 
-## Changes
+## ตรวจสอบก่อนขอ Merge
 
-- [ ] Source อยู่ใน `labs/week-NN/source/`
-- [ ] Evidence อยู่ใน `labs/week-NN/evidence/`
-- [ ] Build output นำเข้า `labs/week-NN/publish/` แล้ว หรือเป็น LAB แบบ evidence report
-- [ ] แก้ `lab-metadata.json` ครบ
-
-## Verification
-
-- [ ] รันทดสอบของ LAB เดิมผ่าน
-- [ ] `npm run build:pages` ผ่าน
-- [ ] `npm run verify:lab -- week-NN` ผ่าน
-- [ ] Pages เปิดใน Incognito และไม่มี Console/404 error
-
-## Notes / Known Issues
-
--
+- [ ] Markdown links ทำงาน
+- [ ] ตัวอย่างคำสั่งรองรับ macOS และ Windows หรือระบุข้อแตกต่างแล้ว
+- [ ] ไม่มี token, password, `.env` หรือข้อมูลส่วนบุคคล
+- [ ] README / checklist / rubric ได้รับการปรับให้สอดคล้อง
+- [ ] ทดสอบ starter files แล้ว
