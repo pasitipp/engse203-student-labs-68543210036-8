@@ -1,0 +1,12 @@
+# Student Profile
+
+| รายการ | ข้อมูล |
+|---|---|
+| รายวิชา | ENGSE203 การเขียนโปรแกรมสำหรับวิศวกรซอฟต์แวร์ |
+| รหัสนักศึกษา | 68543210036-8 |
+| ชื่อ-นามสกุล | Pasit Petoumphun |
+| Section | SEC2 |
+| GitHub Username | pasitipp |
+| Repository | `engse203-student-labs-68543210036-8` |
+| Mode | `migration` |
+| Pages Hub | https://pasitipp.github.io/engse203-student-labs-68543210036-8/ |

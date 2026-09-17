@@ -1,0 +1,10 @@
+const fs = require('fs');
+const week = process.argv[2];
+const pr = process.argv[3];
+const path = `labs/${week}/lab-metadata.json`;
+const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+data.status = 'submitted';
+data.pullRequestUrl = pr;
+data.testStatus = 'pass';
+data.submissionTag = `lab-${week.split('-')[1]}-submission-v1`;
+fs.writeFileSync(path, JSON.stringify(data, null, 2));
