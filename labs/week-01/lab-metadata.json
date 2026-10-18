@@ -5,10 +5,10 @@
   "sourceOrigin": "course-starter",
   "originalRepoUrl": "",
   "originalCommit": "",
-  "pullRequestUrl": "",
+  "pullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/9",
   "submissionTag": "lab-01-submission-v1",
   "testStatus": "pass",
-  "notes": "Automated results are in evidence/. Manual screenshots and explanation must be checked by the student. This LAB is reviewed in its own pull request; previous tags retain their original contents.",
+  "notes": "Automated results are in evidence/. Manual screenshots and explanation must be checked by the student. Current changes await review; previous tags retain their original contents.",
   "sourceRef": "lab/week-01",
   "resultType": "report",
   "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/2"
