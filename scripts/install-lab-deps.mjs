@@ -6,7 +6,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const directories = [];
 function visit(folder) {
   for (const entry of fs.readdirSync(folder, { withFileTypes: true })) {
-    if (['node_modules', '.git', 'dist', 'publish', 'evidence', 'ENGSE206-Lab-1'].includes(entry.name)) continue;
+    if (['node_modules', '.git', 'dist', 'publish', 'evidence'].includes(entry.name)) continue;
     const target = path.join(folder, entry.name);
     if (entry.isDirectory()) visit(target);
     else if (entry.name === 'package.json') directories.push(folder);
