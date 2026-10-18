@@ -40,3 +40,7 @@ npm.cmd run verify
 ```
 
 ตัวตรวจ root ปรับให้ดูไฟล์ที่ Git จะนำขึ้นจริง จึงไม่เตือน node_modules ที่ถูก ignore และยอมรับเฉพาะ frontend/.env.production ที่มี VITE_API_BASE_URL ว่าง ไม่มี secret ส่วน checker ราย LAB ใช้ของอาจารย์ (LAB04 แก้เฉพาะการแปลง Windows file URL)
+
+## สถานะการเผยแพร่
+
+งานใหม่อยู่ในเครื่องบน branch labs/complete-01-13; ยังไม่ได้ push เพราะระบบอนุมัติอัตโนมัติต้องการคำยืนยันเผยแพร่ชื่อ รหัส และอีเมลใน repo public ก่อน เมื่อได้รับอนุญาตจึง push และเปิด Draft PR; Source links ของงานใหม่จะใช้ได้หลัง push
