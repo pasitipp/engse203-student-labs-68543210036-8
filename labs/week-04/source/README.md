@@ -8,7 +8,7 @@
 
 ## URLs
 
-- Repository: https://github.com/Pasit Petoumphun/engse203-student-labs-68543210036-8
+- Repository: https://github.com/pasitipp/engse203-student-labs-68543210036-8
 - Pull Request:
 - GitHub Pages:
 
@@ -60,9 +60,9 @@ State ที่เกี่ยวกับข้อมูลรายการ (
 
 ## Screenshots
 
-- Desktop: `evidence/desktop-1280.png`
-- Mobile 375px: `evidence/mobile-375.png`
-- Validation/empty state: `evidence/invalid-state.png`, `evidence/empty-state.png`
+- Desktop: `../evidence/desktop.png`
+- Mobile 375px: `../evidence/mobile-375.png`
+- Validation/empty state: `../evidence/validation.png`, `../evidence/empty-state.png`
 
 ## Week 03 → Week 04 Reflection
 
@@ -72,3 +72,7 @@ DOM Mutation ใน Week 03 ต้องมาคอยดักจับ Event 
 
 ระบุเครื่องมือหรือแหล่งที่ใช้, prompt/คำถามสำคัญ, ส่วนที่นำมาปรับ และวิธีที่ตรวจสอบความถูกต้อง หากไม่ได้ใช้ให้เขียนว่า “ไม่ได้ใช้”
 
+
+## รอบตรวจ 18 ตุลาคม 2569
+
+Codex ช่วยตรวจ checker/build และทดสอบฟอร์มเพิ่ม/ลบจริง ดู ../evidence/BROWSER_RESULTS.md; ตารางเดิมด้านบนยังไม่ใช่คำยืนยันว่ารอบนี้ทดสอบซ้ำครบทุกข้อ
