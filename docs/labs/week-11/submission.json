@@ -1,0 +1,19 @@
+{
+  "week": "week-11",
+  "title": "Production and Full-Stack Integration",
+  "status": "ready",
+  "sourceOrigin": "course-starter",
+  "originalRepoUrl": "",
+  "originalCommit": "",
+  "pullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/18",
+  "submissionTag": "",
+  "testStatus": "pass",
+  "notes": "Local build and automated checks pass. Personal demo video CP42 is pending; DEMO.md is a recording guide, not video evidence. No cloud service has been deployed.",
+  "sourceRef": "lab/week-11",
+  "resultType": "report",
+  "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/8",
+  "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-11/",
+  "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-11/labs/week-11/source",
+  "hasPublish": true,
+  "sourceEntries": 16
+}
