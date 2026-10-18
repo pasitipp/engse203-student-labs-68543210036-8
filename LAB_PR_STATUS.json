@@ -1,0 +1,209 @@
+{
+  "verifiedAt": "2026-10-18T03:16:19.508Z",
+  "entries": [
+    {
+      "week": "week-01",
+      "branch": "lab/week-01",
+      "pr": 9,
+      "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/9",
+      "commit": "a70d0d1c507a85f8a00eb8fc67c8fdb18c229d8d",
+      "scopeVerified": true,
+      "ci": [
+        {
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/actions/runs/39092779512/job/117572843531",
+          "id": 117572843531
+        }
+      ]
+    },
+    {
+      "week": "week-02",
+      "branch": "lab/week-02",
+      "pr": 10,
+      "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/10",
+      "commit": "e4bd2405a1415b2f83e2f9effd770efe97e1c884",
+      "scopeVerified": true,
+      "ci": [
+        {
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/actions/runs/39092780137/job/117572845245",
+          "id": 117572845245
+        }
+      ]
+    },
+    {
+      "week": "week-03",
+      "branch": "lab/week-03",
+      "pr": 11,
+      "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/11",
+      "commit": "6a1e938199fe9e0dc5efb883a4f60f01e99fc4ac",
+      "scopeVerified": true,
+      "ci": [
+        {
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/actions/runs/39092780240/job/117572845565",
+          "id": 117572845565
+        }
+      ]
+    },
+    {
+      "week": "week-04",
+      "branch": "lab/week-04",
+      "pr": 12,
+      "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/12",
+      "commit": "6d1cbe5cdfe718f0220e07b883841a1ecfd9dbe8",
+      "scopeVerified": true,
+      "ci": [
+        {
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/actions/runs/39092779662/job/117572844039",
+          "id": 117572844039
+        }
+      ]
+    },
+    {
+      "week": "week-05",
+      "branch": "lab/week-05",
+      "pr": 13,
+      "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/13",
+      "commit": "78eb996e3aa1df1c9169e76e8499f32df843ec08",
+      "scopeVerified": true,
+      "ci": [
+        {
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/actions/runs/39092780102/job/117572845418",
+          "id": 117572845418
+        }
+      ]
+    },
+    {
+      "week": "week-06",
+      "branch": "lab/week-06",
+      "pr": 14,
+      "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/14",
+      "commit": "2009fe77b6745f57a1b61367df0784780efc1e3c",
+      "scopeVerified": true,
+      "ci": [
+        {
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/actions/runs/39092779860/job/117572844645",
+          "id": 117572844645
+        }
+      ]
+    },
+    {
+      "week": "week-07",
+      "branch": "lab/week-07",
+      "pr": 15,
+      "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/15",
+      "commit": "48be29089824785854b29de6dfd1490e6e0ecac3",
+      "scopeVerified": true,
+      "ci": [
+        {
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/actions/runs/39092780568/job/117572846777",
+          "id": 117572846777
+        }
+      ]
+    },
+    {
+      "week": "week-09",
+      "branch": "lab/week-09",
+      "pr": 16,
+      "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/16",
+      "commit": "9c704f4b18cf6dd0f6919723315ad26766027135",
+      "scopeVerified": true,
+      "ci": [
+        {
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/actions/runs/39092778861/job/117572842031",
+          "id": 117572842031
+        }
+      ]
+    },
+    {
+      "week": "week-10",
+      "branch": "lab/week-10",
+      "pr": 17,
+      "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/17",
+      "commit": "c310e5f8273387a0a4c572021df518f7f1033171",
+      "scopeVerified": true,
+      "ci": [
+        {
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/actions/runs/39092780030/job/117572845053",
+          "id": 117572845053
+        }
+      ]
+    },
+    {
+      "week": "week-11",
+      "branch": "lab/week-11",
+      "pr": 18,
+      "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/18",
+      "commit": "d84a81ec326b4c5e6c449623044e750d4ce9c819",
+      "scopeVerified": true,
+      "ci": [
+        {
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/actions/runs/39092778760/job/117572841569",
+          "id": 117572841569
+        }
+      ]
+    },
+    {
+      "week": "week-12",
+      "branch": "lab/week-12",
+      "pr": 19,
+      "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/19",
+      "commit": "508b0d0cdd6c99e596c5ddc1b7337e83d19c0506",
+      "scopeVerified": true,
+      "ci": [
+        {
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/actions/runs/39092779946/job/117572844880",
+          "id": 117572844880
+        }
+      ]
+    },
+    {
+      "week": "week-13",
+      "branch": "lab/week-13",
+      "pr": 20,
+      "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/20",
+      "commit": "90b48eb6245d58dcf415599bce5eee43ccc513b4",
+      "scopeVerified": true,
+      "ci": [
+        {
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/actions/runs/39092779410/job/117572843272",
+          "id": 117572843272
+        }
+      ]
+    }
+  ]
+}

@@ -1,59 +1,41 @@
-# ENGSE203 Student LAB Portfolio
+# ENGSE203 LAB Portfolio
 
-Repository เดียวสำหรับเก็บผลงาน LAB ตลอดรายวิชา โดยใช้ branch รายสัปดาห์และ GitHub Pages Hub สำหรับตรวจผลลัพธ์
+นายพสิษฐิ์ เพชรอำพันธุ์ · Pasit Petoumphun · 68543210036-8 · SEC2
+GitHub: pasitipp · email: kimm122547@gmail.com
 
-## เลือกเส้นทางเริ่มต้น
+แยกงานทุก LAB เป็น branch และ PR ของตัวเอง ดู [แผนและลิงก์ราย LAB](COURSE_LAB_MAP.md)
 
-- **รุ่นถัดไป/ยังไม่เริ่ม LAB01:** อ่าน [START_HERE_BEFORE_LAB01.md](./START_HERE_BEFORE_LAB01.md)
-- **รุ่นปัจจุบันมี repo LAB01–03 แยกแล้ว:** อ่าน [START_HERE_LAB01_TO_LAB03.md](./START_HERE_LAB01_TO_LAB03.md)
-- **ทุกสัปดาห์:** ใช้ [WEEKLY_LAB_WORKFLOW.md](./WEEKLY_LAB_WORKFLOW.md)
+- LAB01–07 และ LAB09–13 รวม 12 งาน; Week08 สอบกลางภาค
+- Branch: lab/week-NN (แต่ละ PR มีเฉพาะ LAB ของตัวเองและ CI/output ที่เกี่ยวข้อง)
+- Portfolio PR #21 รวมเฉพาะหน้าแสดงผล ลิงก์ และ shared tooling
+- Source/tests ของแต่ละ LAB อยู่ใน PR #9–#20
 
-```bash
-nvm use
-npm install
-npm run setup -- --student-id 6500000000 --name "ชื่อ นามสกุล" --section SEC1 --github github-user --mode new-course
-```
+[Portfolio](https://pasitipp.github.io/engse203-student-labs-68543210036-8/) · [สิ่งที่ต้องทำก่อนส่ง](STUDENT_NEXT_STEPS.md) · [วิธีรัน](HOW_TO_RUN.md)
 
-## Repository Contract
+## ตรวจงานแยก LAB
 
-| รายการ | รูปแบบ |
-|---|---|
-| Repository | `engse203-student-labs-<student-id>` |
-| Weekly branch | `lab/week-NN` |
-| Source | `labs/week-NN/source/` |
-| Evidence | `labs/week-NN/evidence/` |
-| Publish input | `labs/week-NN/publish/` |
-| Pages output | `docs/labs/week-NN/` |
-| Pages source | `main /docs` |
-| Submission | Pages Hub URL + Weekly Result URL + merged PR URL + submission tag |
+เปิด branch ที่ต้องการ แล้วอ่าน labs/week-NN/README.md; CI .github/workflows/lab-NN.yml ติดตั้งและตรวจ LAB นั้นเอง ใช้ Node.js 24
+โค้ดที่แยกมาจาก snapshot 90d044f ซึ่งผ่าน build/tests/checkers แล้ว มี logs และภาพจริงใน evidence/; CI ราย PR ตรวจซ้ำอีกครั้ง
 
-## คำสั่งหลัก
+## Portfolio / หลังรวม PR
 
-```bash
-npm run import:source -- week-01 /path/to/old-lab01-repository
-npm run import:publish -- week-03 labs/week-03/source
-npm run build:pages
-npm run verify
-```
+Portfolio แสดง 12 การ์ดและชี้ Source/PR แยกกันทั้งหมด API/SQLite LAB แสดง evidence report เพราะ GitHub Pages รัน Express/SQLite ไม่ได้
+หลัง merge LAB ต่าง ๆ และ shared tooling ของ PR #21 แล้วจึงรันคำสั่งรวมบน main:
 
-ถ้า build ซ้ำ ใช้ `--replace` ต่อท้ายคำสั่ง `import:publish` หลังตรวจ week และ path แล้ว
+~~~powershell
+node scripts/install-lab-deps.mjs
+node scripts/build-lab-output.mjs
+node scripts/check-labs.mjs
+node scripts/prepare-portfolio.mjs
+npm.cmd run build:pages
+npm.cmd run verify
+~~~
 
-ห้ามแก้ไฟล์ใน `docs/` ด้วยมือ เพราะ `npm run build:pages` จะสร้างใหม่จาก config, metadata และโฟลเดอร์ `publish/`
+ห้ามแก้ docs/ ด้วยมือ; สร้างจาก metadata/publish ของ LAB ที่รวมแล้ว
+ก่อนรวมครบสามารถตรวจ artifact Portfolio ด้วย node scripts/verify-portfolio.mjs
 
-## Pages URL
+## หลักฐานและการใช้ AI
 
-```text
-https://<github-username>.github.io/engse203-student-labs-<student-id>/
-```
-
-## LAB ที่เตรียมไว้
-
-Template รุ่นนี้มี workspace LAB01–04 และ Pages Hub จะสร้างการ์ดจากทุก `labs/week-NN/` อัตโนมัติ
-
-## เพิ่ม LAB ในอนาคต
-
-```bash
-npm run add:lab -- week-05 "React Routing and Data"
-```
-
-จากนั้นใช้ workflow เดิมกับ `lab/week-05` และ `labs/week-05/`
+ใช้ starter ของผู้สอนและงานเดิมของตนเอง; Codex ช่วย implementation, testing และจัด branch/PR ดู AI_USAGE.md ในแต่ละ LAB
+ยังไม่อ้างว่าผู้จัดทำอัดวิดีโอ LAB11, ทำ paired regression หรือเข้าใจ/อธิบายโค้ดครบแล้ว ต้องทำด้วยตนเองก่อนส่ง
+ไม่มีการย้าย submission tags เก่าหรือเปลี่ยนวัน commit ย้อนหลัง

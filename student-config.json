@@ -1,9 +1,40 @@
 {
   "course": "ENGSE203",
   "studentId": "68543210036-8",
-  "studentName": "Pasit Petoumphun",
+  "studentName": "นายพสิษฐิ์ เพชรอำพันธุ์",
   "section": "SEC2",
   "githubUsername": "pasitipp",
   "repositoryName": "engse203-student-labs-68543210036-8",
-  "repositoryMode": "migration"
+  "repositoryMode": "new-course",
+  "studentNameEnglish": "Pasit Petoumphun",
+  "email": "kimm122547@gmail.com",
+  "portfolioPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/21",
+  "labSourceRefs": {
+    "week-01": "lab/week-01",
+    "week-02": "lab/week-02",
+    "week-03": "lab/week-03",
+    "week-04": "lab/week-04",
+    "week-05": "lab/week-05",
+    "week-06": "lab/week-06",
+    "week-07": "lab/week-07",
+    "week-09": "lab/week-09",
+    "week-10": "lab/week-10",
+    "week-11": "lab/week-11",
+    "week-12": "lab/week-12",
+    "week-13": "lab/week-13"
+  },
+  "labPullRequests": {
+    "week-01": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/9",
+    "week-02": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/10",
+    "week-03": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/11",
+    "week-04": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/12",
+    "week-05": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/13",
+    "week-06": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/14",
+    "week-07": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/15",
+    "week-09": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/16",
+    "week-10": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/17",
+    "week-11": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/18",
+    "week-12": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/19",
+    "week-13": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/20"
+  }
 }
