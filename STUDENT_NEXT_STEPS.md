@@ -19,7 +19,8 @@
 - [ ] LAB05 ให้เพื่อนเป็นผู้ทดสอบและกรอก REGRESSION_CHECKLIST.md จริง (11 ข้อ); ช่วยกันบันทึกช่องที่ยัง NOT RUN ใน TEST_REPORT.md
 - [ ] ตรวจหลักฐานส่วนตัวตามโจทย์ราย LAB: ภาพจาก VS Code, DevTools/CORS, SQL และคำตอบสะท้อนการเรียนรู้ หากผู้สอนกำหนด
 - [ ] LAB11 อัดวิดีโอด้วยเสียงของตนเอง แล้วส่ง URL เพื่อใส่ใน source/DEMO.md
-- [ ] Review PR ที่รวมงานใหม่ แล้ว merge เมื่อเห็นว่าตรงกับงานและอธิบายได้
+- [x] Push branch labs/complete-01-13 และเปิด Draft PR #8: https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/8
+- [ ] Review PR #8 แล้ว merge เมื่อเห็นว่าตรงกับงานและอธิบายได้
 - [ ] ตรวจ GitHub Pages หลัง merge ว่ามี 12 การ์ดและลิงก์เปิดได้
 - [ ] จัด weekly PR / submission tag ตามรูปแบบที่ผู้สอนรับ ตรวจ tag เดิมก่อน ห้ามย้าย tag เก่าให้ชี้คนละงาน
 - [ ] ส่งลิงก์ Portfolio, ผลราย LAB, PR และ tag ในช่องทางผู้สอน
@@ -43,4 +44,4 @@ npm.cmd run verify
 
 ## สถานะการเผยแพร่
 
-ผู้จัดทำอนุญาตให้นำงานขึ้น GitHub ในคำขอวันที่ 18 ตุลาคม 2569 งานอยู่บน branch labs/complete-01-13 เตรียมเปิด PR เพื่อ review; GitHub Pages ใช้ main /docs จึงอัปเดตหลัง merge ส่วนวิดีโอและหลักฐานส่วนตัวยังรอดำเนินการตามรายการด้านบน
+ผู้จัดทำอนุญาตให้นำงานขึ้น GitHub ในคำขอวันที่ 18 ตุลาคม 2569 งานอยู่บน branch labs/complete-01-13 เปิด Draft PR #8 เพื่อ review แล้ว; GitHub Pages ใช้ main /docs จึงอัปเดตหลัง merge ส่วนวิดีโอและหลักฐานส่วนตัวยังรอดำเนินการตามรายการด้านบน
