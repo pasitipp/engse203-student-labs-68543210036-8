@@ -1,33 +1,27 @@
-# Week 03 — Responsive Web UI & Form Interaction
+# LAB03 — Responsive Web UI & Form Interaction
 
-## รุ่นใหม่
+นายพสิษฐิ์ เพชรอำพันธุ์ · 68543210036-8 · SEC2
 
-เปิด `lab/week-03` แล้วคัดลอก LAB03 starter จาก Course Repository เข้า `source/`
+Branch: `lab/week-03` — PR นี้เปลี่ยนเฉพาะ LAB03, output ของ LAB เดียวกัน และ CI ของ LAB นี้
 
-```bash
-npm --prefix labs/week-03/source install
-npm --prefix labs/week-03/source run build
-npm run import:publish -- week-03 labs/week-03/source/dist
-```
+Source: [source/](source/) · Evidence: [evidence/](evidence/) · Output/report: [publish/](publish/)
 
-## รุ่นปัจจุบันที่มี repo เดิม
+## รันและตรวจ LAB นี้แยกต่างหาก
 
-```bash
-npm run import:source -- week-03 /path/to/old-lab03
-```
+ใช้ Node.js 24 แล้วรันจาก repository root:
 
-ถ้าเป็น static site:
+~~~powershell
+Set-Location labs/week-03/source
+npm.cmd ci
+npm.cmd run check
+npm.cmd run build
+~~~
 
-```bash
-npm run import:publish -- week-03 labs/week-03/source
-```
+ดู source/README.md และ package.json สำหรับการเปิด dev/API; ใช้ .env.example สร้าง .env ในเครื่องเท่านั้น ห้าม commit secret
 
-ตั้ง `sourceOrigin: "migrated-repository"` และบันทึก Original URL/Commit
+ผลที่แนบใน evidence/ มาจากการรันจริงบนโค้ดต้นทาง 90d044f; CI ของ PR นี้จะตรวจ LAB นี้ซ้ำแยกต่างหาก ไม่ได้ยืนยันหลักฐานส่วนตัวครบแล้ว
 
-## Manual Test
+แผนการเรียน: https://se-rmutl.github.io/engse203/#roadmap
+โจทย์จริง: ดู starter ของสัปดาห์นี้ใน https://github.com/se-rmutl/engse203-lab/tree/main/labs
 
-- Desktop และ mobile 375px
-- Form invalid/valid
-- Event interaction
-- Console ไม่มี error
-- Asset paths ใช้ relative path
+การรวมลิงก์ทั้งรายวิชาอยู่ใน Portfolio PR แยก ไม่ได้รวม source ของทุก LAB ไว้ใน PR นี้
