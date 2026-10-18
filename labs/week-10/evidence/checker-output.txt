@@ -1,18 +1,18 @@
-Run: 2026-10-18T02:40:33.203Z
+Run: 2026-10-18T02:50:04.787Z
 Command: node --disable-warning=ExperimentalWarning check-week10.mjs
 Exit: 0
 
-GET /api/requests 200 1.908 ms - 2562
-GET /api/requests?status=pending 200 0.665 ms - 1259
-GET /api/requests/REQ-001 200 0.495 ms - 321
-GET /api/requests/REQ-999 404 0.302 ms - 65
-POST /api/requests 201 13.748 ms - 285
-POST /api/requests 400 0.459 ms - 514
-PUT /api/requests/REQ-009 200 6.736 ms - 289
-PUT /api/requests/REQ-001 400 0.340 ms - 95
-DELETE /api/requests/REQ-009 204 7.752 ms - -
-GET /api/requests?status=x%27%20OR%20%271%27%3D%271 200 0.604 ms - 2
-GET /api/requests 200 0.489 ms - 2562
+GET /api/requests 200 2.075 ms - 2562
+GET /api/requests?status=pending 200 0.627 ms - 1259
+GET /api/requests/REQ-001 200 0.564 ms - 321
+GET /api/requests/REQ-999 404 0.456 ms - 65
+POST /api/requests 201 15.723 ms - 285
+POST /api/requests 400 0.350 ms - 514
+PUT /api/requests/REQ-009 200 7.851 ms - 289
+PUT /api/requests/REQ-001 400 0.304 ms - 95
+DELETE /api/requests/REQ-009 204 5.513 ms - -
+GET /api/requests?status=x%27%20OR%20%271%27%3D%271 200 0.515 ms - 2
+GET /api/requests 200 0.364 ms - 2562
 
 ✅ STRUCT มีไฟล์ api/data/schema.sql
 ✅ STRUCT มี service ที่ api/src/services/requestService.js

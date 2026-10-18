@@ -1,4 +1,4 @@
-Run: 2026-10-18T02:37:01.639Z
+Run: 2026-10-18T02:50:12.376Z
 Command: node --disable-warning=ExperimentalWarning scripts/record-sql-evidence.mjs
 Database: isolated in-memory SQLite (schema identical to submitted source)
 
@@ -12,7 +12,7 @@ SQL: SELECT * FROM requests ORDER BY id
     "details": "เครื่องปรับอากาศไม่ทำงานตั้งแต่เช้า",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-002",
@@ -22,7 +22,7 @@ SQL: SELECT * FROM requests ORDER BY id
     "details": "เข้าสู่ระบบห้องปฏิบัติการไม่ได้",
     "priority": "normal",
     "status": "in-progress",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-003",
@@ -32,7 +32,7 @@ SQL: SELECT * FROM requests ORDER BY id
     "details": "ขอยืมโปรเจกเตอร์สำหรับนำเสนอโครงงาน",
     "priority": "normal",
     "status": "completed",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-004",
@@ -42,7 +42,7 @@ SQL: SELECT * FROM requests ORDER BY id
     "details": "คอมพิวเตอร์เครื่องที่ 5 เปิดไม่ติด",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-005",
@@ -52,7 +52,7 @@ SQL: SELECT * FROM requests ORDER BY id
     "details": "ขอเพิ่มปลั๊กไฟบริเวณโต๊ะอ่านหนังสือ",
     "priority": "normal",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-006",
@@ -62,7 +62,7 @@ SQL: SELECT * FROM requests ORDER BY id
     "details": "จอภาพห้องปฏิบัติการเปิดไม่ติด",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-007",
@@ -72,7 +72,7 @@ SQL: SELECT * FROM requests ORDER BY id
     "details": "ขอใช้ไมโครโฟนสำหรับการนำเสนอ",
     "priority": "normal",
     "status": "in-progress",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-008",
@@ -82,7 +82,7 @@ SQL: SELECT * FROM requests ORDER BY id
     "details": "ขอเพิ่มไฟส่องสว่างบริเวณทางเดิน",
     "priority": "normal",
     "status": "completed",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   }
 ]
 
@@ -96,7 +96,7 @@ SQL: SELECT * FROM requests WHERE status = 'pending' ORDER BY id
     "details": "เครื่องปรับอากาศไม่ทำงานตั้งแต่เช้า",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-004",
@@ -106,7 +106,7 @@ SQL: SELECT * FROM requests WHERE status = 'pending' ORDER BY id
     "details": "คอมพิวเตอร์เครื่องที่ 5 เปิดไม่ติด",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-005",
@@ -116,7 +116,7 @@ SQL: SELECT * FROM requests WHERE status = 'pending' ORDER BY id
     "details": "ขอเพิ่มปลั๊กไฟบริเวณโต๊ะอ่านหนังสือ",
     "priority": "normal",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-006",
@@ -126,7 +126,7 @@ SQL: SELECT * FROM requests WHERE status = 'pending' ORDER BY id
     "details": "จอภาพห้องปฏิบัติการเปิดไม่ติด",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   }
 ]
 
@@ -140,7 +140,7 @@ SQL: SELECT * FROM requests WHERE priority = 'urgent' AND status <> 'completed'
     "details": "เครื่องปรับอากาศไม่ทำงานตั้งแต่เช้า",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-004",
@@ -150,7 +150,7 @@ SQL: SELECT * FROM requests WHERE priority = 'urgent' AND status <> 'completed'
     "details": "คอมพิวเตอร์เครื่องที่ 5 เปิดไม่ติด",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-006",
@@ -160,7 +160,7 @@ SQL: SELECT * FROM requests WHERE priority = 'urgent' AND status <> 'completed'
     "details": "จอภาพห้องปฏิบัติการเปิดไม่ติด",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   }
 ]
 
@@ -174,7 +174,7 @@ SQL: SELECT * FROM requests WHERE details LIKE '%เครื่อง%'
     "details": "เครื่องปรับอากาศไม่ทำงานตั้งแต่เช้า",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-004",
@@ -184,7 +184,7 @@ SQL: SELECT * FROM requests WHERE details LIKE '%เครื่อง%'
     "details": "คอมพิวเตอร์เครื่องที่ 5 เปิดไม่ติด",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   }
 ]
 
@@ -250,7 +250,7 @@ SQL: SELECT r.*, u.department FROM requests r JOIN users u ON u.id = r.requester
     "details": "เครื่องปรับอากาศไม่ทำงานตั้งแต่เช้า",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01",
+    "created_at": "2026-10-18 09:50:12",
     "department": "วิศวกรรมซอฟต์แวร์"
   },
   {
@@ -261,7 +261,7 @@ SQL: SELECT r.*, u.department FROM requests r JOIN users u ON u.id = r.requester
     "details": "คอมพิวเตอร์เครื่องที่ 5 เปิดไม่ติด",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01",
+    "created_at": "2026-10-18 09:50:12",
     "department": "วิศวกรรมซอฟต์แวร์"
   },
   {
@@ -272,7 +272,7 @@ SQL: SELECT r.*, u.department FROM requests r JOIN users u ON u.id = r.requester
     "details": "ขอใช้ไมโครโฟนสำหรับการนำเสนอ",
     "priority": "normal",
     "status": "in-progress",
-    "created_at": "2026-10-18 09:37:01",
+    "created_at": "2026-10-18 09:50:12",
     "department": "วิศวกรรมซอฟต์แวร์"
   },
   {
@@ -283,7 +283,7 @@ SQL: SELECT r.*, u.department FROM requests r JOIN users u ON u.id = r.requester
     "details": "เข้าสู่ระบบห้องปฏิบัติการไม่ได้",
     "priority": "normal",
     "status": "in-progress",
-    "created_at": "2026-10-18 09:37:01",
+    "created_at": "2026-10-18 09:50:12",
     "department": "วิศวกรรมซอฟต์แวร์"
   },
   {
@@ -294,7 +294,7 @@ SQL: SELECT r.*, u.department FROM requests r JOIN users u ON u.id = r.requester
     "details": "ขอเพิ่มไฟส่องสว่างบริเวณทางเดิน",
     "priority": "normal",
     "status": "completed",
-    "created_at": "2026-10-18 09:37:01",
+    "created_at": "2026-10-18 09:50:12",
     "department": "วิศวกรรมซอฟต์แวร์"
   },
   {
@@ -305,7 +305,7 @@ SQL: SELECT r.*, u.department FROM requests r JOIN users u ON u.id = r.requester
     "details": "จอภาพห้องปฏิบัติการเปิดไม่ติด",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01",
+    "created_at": "2026-10-18 09:50:12",
     "department": "วิศวกรรมซอฟต์แวร์"
   }
 ]
@@ -339,7 +339,7 @@ SQL: SELECT * FROM requests ORDER BY created_at DESC, id DESC LIMIT 3
     "details": "ขอเพิ่มไฟส่องสว่างบริเวณทางเดิน",
     "priority": "normal",
     "status": "completed",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-007",
@@ -349,7 +349,7 @@ SQL: SELECT * FROM requests ORDER BY created_at DESC, id DESC LIMIT 3
     "details": "ขอใช้ไมโครโฟนสำหรับการนำเสนอ",
     "priority": "normal",
     "status": "in-progress",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   },
   {
     "id": "REQ-006",
@@ -359,7 +359,7 @@ SQL: SELECT * FROM requests ORDER BY created_at DESC, id DESC LIMIT 3
     "details": "จอภาพห้องปฏิบัติการเปิดไม่ติด",
     "priority": "urgent",
     "status": "pending",
-    "created_at": "2026-10-18 09:37:01"
+    "created_at": "2026-10-18 09:50:12"
   }
 ]
 

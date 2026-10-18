@@ -1,4 +1,4 @@
-Run: 2026-10-18T02:31:04.296Z
+Run: 2026-10-18T02:50:03.909Z
 Command: npm.cmd run check
 Exit: 0
 
@@ -6,21 +6,21 @@ Exit: 0
 > engse203-week06-campus-api-starter@1.0.0 check
 > node scripts/check-project.mjs
 
-GET / 200 3ms
+GET / 200 4ms
 GET /api/requests 200 1ms
-GET /api/requests/REQ-001 200 0ms
-GET /api/requests/REQ-999 404 1ms
+GET /api/requests/REQ-001 200 1ms
+GET /api/requests/REQ-999 404 0ms
 POST /api/requests 201 10ms
 POST /api/requests 400 0ms
-POST /api/requests 400 0ms
+POST /api/requests 400 1ms
 POST /api/requests 400 0ms
 POST /api/requests 400 1ms
-DELETE /api/requests/REQ-MVD7L3CC-OBQV 204 1ms
+DELETE /api/requests/REQ-MVD89IO5-7Y5E 204 1ms
 DELETE /api/requests/REQ-999 404 0ms
 GET /api/requests 200 0ms
 GET /api/unknown-path-xyz 404 0ms
 POST /api/requests 400 0ms
-GET /api/requests?status=pending 200 0ms
+GET /api/requests?status=pending 200 1ms
 PUT /api/requests/REQ-001 200 1ms
 PUT /api/requests/REQ-001 400 0ms
 

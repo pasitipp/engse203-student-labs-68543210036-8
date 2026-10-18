@@ -2,10 +2,13 @@ name: Verify LAB portfolio
 on:
   pull_request:
   push:
-    branches: [main, labs/complete-01-13]
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: labs-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   verify:
     runs-on: windows-latest

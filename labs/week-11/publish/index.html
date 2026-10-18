@@ -1,4 +1,4 @@
-<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>week-11 evidence</title><style>body{font:16px/1.65 Tahoma,sans-serif;background:#edf3f8;color:#172d43;margin:0}main{max-width:1000px;margin:24px auto;background:white;padding:28px;border-radius:14px}a{color:#1469a8}pre{overflow:auto;white-space:pre-wrap;background:#f1f5f9;padding:16px;font:13px/1.6 monospace}summary{cursor:pointer;padding:12px;background:#e6f0f7;margin-top:12px}h1{line-height:1.3}</style></head><body><main><a href="../../index.html">← LAB Portfolio</a><h1>week-11: Production and Full-Stack Integration</h1><p>Local build and automated checks pass. Personal demo video CP42 is pending; DEMO.md is a recording guide, not video evidence. No cloud service has been deployed.</p><p>หน้านี้แสดงผลตรวจจากเครื่องจริง API และ SQLite ต้องรันด้วย Node.js ในเครื่อง; GitHub Pages ให้บริการได้เฉพาะไฟล์ static</p><p><a href="https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/labs/complete-01-13/labs/week-11/source">Source / run instructions</a> · <a href="https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/labs/complete-01-13/labs/week-11/evidence">Evidence</a></p><details><summary>api-tests.txt</summary><pre>Run: 2026-10-18T02:39:40.154Z
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>week-11 evidence</title><style>body{font:16px/1.65 Tahoma,sans-serif;background:#edf3f8;color:#172d43;margin:0}main{max-width:1000px;margin:24px auto;background:white;padding:28px;border-radius:14px}a{color:#1469a8}pre{overflow:auto;white-space:pre-wrap;background:#f1f5f9;padding:16px;font:13px/1.6 monospace}summary{cursor:pointer;padding:12px;background:#e6f0f7;margin-top:12px}h1{line-height:1.3}</style></head><body><main><a href="../../index.html">← LAB Portfolio</a><h1>week-11: Production and Full-Stack Integration</h1><p>Local build and automated checks pass. Personal demo video CP42 is pending; DEMO.md is a recording guide, not video evidence. No cloud service has been deployed.</p><p>หน้านี้แสดงผลตรวจจากเครื่องจริง API และ SQLite ต้องรันด้วย Node.js ในเครื่อง; GitHub Pages ให้บริการได้เฉพาะไฟล์ static</p><p><a href="https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/labs/complete-01-13/labs/week-11/source">Source / run instructions</a> · <a href="https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/labs/complete-01-13/labs/week-11/evidence">Evidence</a></p><details><summary>api-tests.txt</summary><pre>Run: 2026-10-18T02:49:51.527Z
 Command: npm.cmd test
 Exit: 0
 
@@ -6,37 +6,37 @@ Exit: 0
 &gt; engse203-week06-campus-api@2.0.0 test
 &gt; node --disable-warning=ExperimentalWarning --test &quot;tests/*.test.js&quot;
 
-GET /api/requests 200 1.844 ms - 2562
-✔ GET list returns array (22.7115ms)
-GET /api/requests 200 0.532 ms - 2562
-✔ GET list contains requesterName (5.266ms)
-GET /api/requests/REQ-001 200 0.475 ms - 321
-✔ GET existing id (5.5831ms)
-GET /api/requests/REQ-999 404 0.291 ms - 65
-✔ GET missing id (5.5556ms)
-POST /api/requests 201 8.908 ms - 270
-✔ POST creates pending record (14.7604ms)
-POST /api/requests 400 0.306 ms - 514
-✔ POST incomplete rejected (3.7585ms)
-GET /api/requests 200 0.330 ms - 2562
-✔ CORS allowed origin (4.111ms)
-PUT /api/requests/REQ-001 200 0.625 ms - 323
-GET /api/requests/REQ-001 200 0.281 ms - 323
-✔ PUT status persists (8.8278ms)
-PUT /api/requests/REQ-999 404 0.482 ms - 65
-✔ PUT missing returns 404 (4.7698ms)
-DELETE /api/requests/REQ-001 204 0.143 ms - -
-GET /api/requests/REQ-001 404 0.180 ms - 65
-✔ DELETE then GET is 404 (5.6937ms)
-GET /api/requests?status=%27%20OR%201%3D1%20-- 200 0.262 ms - 2
-✔ SQL injection remains data (4.9074ms)
-PUT /api/requests/REQ-001 400 0.306 ms - 95
-✔ invalid status is 400 (4.1117ms)
-GET /api/users 200 0.275 ms - 619
-✔ GET users exposes public fields and uses the initialized database (2.8139ms)
-GET /api/users/1/requests 200 0.411 ms - 248
-GET /api/users/not-a-number/requests 400 0.155 ms - 29
-✔ GET user requests is parameterized and validates the id (6.5667ms)
+GET /api/requests 200 2.146 ms - 2562
+✔ GET list returns array (24.1258ms)
+GET /api/requests 200 0.373 ms - 2562
+✔ GET list contains requesterName (4.9506ms)
+GET /api/requests/REQ-001 200 0.394 ms - 321
+✔ GET existing id (4.4619ms)
+GET /api/requests/REQ-999 404 0.327 ms - 65
+✔ GET missing id (4.3706ms)
+POST /api/requests 201 8.811 ms - 270
+✔ POST creates pending record (13.0732ms)
+POST /api/requests 400 0.503 ms - 514
+✔ POST incomplete rejected (5.1034ms)
+GET /api/requests 200 0.257 ms - 2562
+✔ CORS allowed origin (3.8007ms)
+PUT /api/requests/REQ-001 200 0.483 ms - 323
+GET /api/requests/REQ-001 200 0.336 ms - 323
+✔ PUT status persists (7.5562ms)
+PUT /api/requests/REQ-999 404 0.305 ms - 65
+✔ PUT missing returns 404 (4.3257ms)
+DELETE /api/requests/REQ-001 204 0.160 ms - -
+GET /api/requests/REQ-001 404 0.212 ms - 65
+✔ DELETE then GET is 404 (5.7459ms)
+GET /api/requests?status=%27%20OR%201%3D1%20-- 200 0.426 ms - 2
+✔ SQL injection remains data (5.1534ms)
+PUT /api/requests/REQ-001 400 0.256 ms - 95
+✔ invalid status is 400 (3.6865ms)
+GET /api/users 200 0.398 ms - 619
+✔ GET users exposes public fields and uses the initialized database (3.6826ms)
+GET /api/users/1/requests 200 0.301 ms - 248
+GET /api/users/not-a-number/requests 400 0.144 ms - 29
+✔ GET user requests is parameterized and validates the id (5.358ms)
 ℹ tests 14
 ℹ suites 0
 ℹ pass 14
@@ -44,15 +44,15 @@ GET /api/users/not-a-number/requests 400 0.155 ms - 29
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 382.1497
+ℹ duration_ms 387.6195
 </pre></details>
-<details><summary>checker-output.txt</summary><pre>Run: 2026-10-18T02:40:33.918Z
+<details><summary>checker-output.txt</summary><pre>Run: 2026-10-18T02:50:05.570Z
 Command: node --disable-warning=ExperimentalWarning check-week11.mjs
 Exit: 0
 
-GET /api/health 200 2.250 ms - 131
-GET /api/requests 200 0.539 ms - 2562
-GET /api/nope 404 0.174 ms - 62
+GET /api/health 200 2.017 ms - 131
+GET /api/requests 200 0.852 ms - 2562
+GET /api/nope 404 0.370 ms - 62
 
 ✅ CP35 มีชั้น API (api/src/app.js)
 ✅ CP35 มีชั้น frontend (frontend/src)
@@ -106,7 +106,7 @@ GET /api/nope 404 0.174 ms - 62
 หมายเหตุ: checker ตรวจว่าระบบพร้อมใช้จริง แต่ตรวจไม่ได้ว่าเข้าใจ
 ผู้สอนจะสุ่มถามให้อธิบายว่า dev ต่างจาก production อย่างไร
 </pre></details>
-<details><summary>frontend-build.txt</summary><pre>Run: 2026-10-18T02:39:38.522Z
+<details><summary>frontend-build.txt</summary><pre>Run: 2026-10-18T02:49:47.358Z
 Command: npm.cmd run build
 Exit: 0
 
@@ -122,5 +122,19 @@ dist/index.html                   0.49 kB │ gzip:  0.31 kB
 dist/assets/index-UUV2Pq6a.css    4.79 kB │ gzip:  1.72 kB
 dist/assets/index-BdyPIQvg.js   250.32 kB │ gzip: 79.16 kB
 
-✓ built in 138ms
+✓ built in 166ms
+</pre></details>
+<details><summary>repository-verification.txt</summary><pre>Run: 2026-10-18T02:51:36.860Z
+Command: npm run verify:lab -- week-11
+Exit: 0
+
+
+&gt; engse203-student-labs-68543210036-8@2.1.0 verify:lab
+&gt; node scripts/verify-repository.mjs --week week-11
+
+Verification summary: 3 pass, 1 warning, 0 error
+PASS  student-config
+PASS  Node 24.20.0
+PASS  week-11 structure/metadata/pages
+WARN  current branch = labs/complete-01-13; ที่แนะนำคือ lab/week-11
 </pre></details></main></body></html>

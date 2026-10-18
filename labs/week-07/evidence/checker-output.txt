@@ -1,11 +1,11 @@
-Run: 2026-10-18T02:31:04.629Z
+Run: 2026-10-18T02:50:04.253Z
 Command: node check-week07.mjs
 Exit: 0
 
-GET /api/requests 200 1.632 ms - 1030
-GET /api/requests 200 0.315 ms - 1030
-PUT /api/requests/REQ-001 200 7.689 ms - 325
-PUT /api/requests/REQ-001 400 0.303 ms - 95
+GET /api/requests 200 1.715 ms - 1030
+GET /api/requests 200 0.295 ms - 1030
+PUT /api/requests/REQ-001 200 9.529 ms - 325
+PUT /api/requests/REQ-001 400 0.381 ms - 95
 
 ✅ STRUCT มีไฟล์ api/src/app.js
 ✅ STRUCT มีไฟล์ api/src/config.js

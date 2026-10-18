@@ -1,4 +1,4 @@
-<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>week-09 evidence</title><style>body{font:16px/1.65 Tahoma,sans-serif;background:#edf3f8;color:#172d43;margin:0}main{max-width:1000px;margin:24px auto;background:white;padding:28px;border-radius:14px}a{color:#1469a8}pre{overflow:auto;white-space:pre-wrap;background:#f1f5f9;padding:16px;font:13px/1.6 monospace}summary{cursor:pointer;padding:12px;background:#e6f0f7;margin-top:12px}h1{line-height:1.3}</style></head><body><main><a href="../../index.html">← LAB Portfolio</a><h1>week-09: Relational Database and SQL (SQLite)</h1><p>Automated results are in evidence/. Manual screenshots and explanation must be checked by the student. Current changes await review; previous tags retain their original contents.</p><p>หน้านี้แสดงผลตรวจจากเครื่องจริง API และ SQLite ต้องรันด้วย Node.js ในเครื่อง; GitHub Pages ให้บริการได้เฉพาะไฟล์ static</p><p><a href="https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/labs/complete-01-13/labs/week-09/source">Source / run instructions</a> · <a href="https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/labs/complete-01-13/labs/week-09/evidence">Evidence</a></p><details><summary>checker-output.txt</summary><pre>Run: 2026-10-18T02:31:04.729Z
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>week-09 evidence</title><style>body{font:16px/1.65 Tahoma,sans-serif;background:#edf3f8;color:#172d43;margin:0}main{max-width:1000px;margin:24px auto;background:white;padding:28px;border-radius:14px}a{color:#1469a8}pre{overflow:auto;white-space:pre-wrap;background:#f1f5f9;padding:16px;font:13px/1.6 monospace}summary{cursor:pointer;padding:12px;background:#e6f0f7;margin-top:12px}h1{line-height:1.3}</style></head><body><main><a href="../../index.html">← LAB Portfolio</a><h1>week-09: Relational Database and SQL (SQLite)</h1><p>Automated results are in evidence/. Manual screenshots and explanation must be checked by the student. Current changes await review; previous tags retain their original contents.</p><p>หน้านี้แสดงผลตรวจจากเครื่องจริง API และ SQLite ต้องรันด้วย Node.js ในเครื่อง; GitHub Pages ให้บริการได้เฉพาะไฟล์ static</p><p><a href="https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/labs/complete-01-13/labs/week-09/source">Source / run instructions</a> · <a href="https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/labs/complete-01-13/labs/week-09/evidence">Evidence</a></p><details><summary>checker-output.txt</summary><pre>Run: 2026-10-18T02:50:04.353Z
 Command: node --disable-warning=ExperimentalWarning check-week09.mjs
 Exit: 0
 
@@ -44,7 +44,21 @@ Exit: 0
 หมายเหตุ: checker ตรวจโครงสร้างและข้อมูลได้ แต่ตรวจไม่ได้ว่าคุณเข้าใจหรือไม่
 ผู้สอนจะสุ่มถามให้เขียน query สดจากฐานข้อมูลของคุณเอง
 </pre></details>
-<details><summary>sql-results.txt</summary><pre>Run: 2026-10-18T02:37:01.639Z
+<details><summary>repository-verification.txt</summary><pre>Run: 2026-10-18T02:51:35.731Z
+Command: npm run verify:lab -- week-09
+Exit: 0
+
+
+&gt; engse203-student-labs-68543210036-8@2.1.0 verify:lab
+&gt; node scripts/verify-repository.mjs --week week-09
+
+Verification summary: 3 pass, 1 warning, 0 error
+PASS  student-config
+PASS  Node 24.20.0
+PASS  week-09 structure/metadata/pages
+WARN  current branch = labs/complete-01-13; ที่แนะนำคือ lab/week-09
+</pre></details>
+<details><summary>sql-results.txt</summary><pre>Run: 2026-10-18T02:50:12.376Z
 Command: node --disable-warning=ExperimentalWarning scripts/record-sql-evidence.mjs
 Database: isolated in-memory SQLite (schema identical to submitted source)
 
@@ -58,7 +72,7 @@ SQL: SELECT * FROM requests ORDER BY id
     &quot;details&quot;: &quot;เครื่องปรับอากาศไม่ทำงานตั้งแต่เช้า&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-002&quot;,
@@ -68,7 +82,7 @@ SQL: SELECT * FROM requests ORDER BY id
     &quot;details&quot;: &quot;เข้าสู่ระบบห้องปฏิบัติการไม่ได้&quot;,
     &quot;priority&quot;: &quot;normal&quot;,
     &quot;status&quot;: &quot;in-progress&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-003&quot;,
@@ -78,7 +92,7 @@ SQL: SELECT * FROM requests ORDER BY id
     &quot;details&quot;: &quot;ขอยืมโปรเจกเตอร์สำหรับนำเสนอโครงงาน&quot;,
     &quot;priority&quot;: &quot;normal&quot;,
     &quot;status&quot;: &quot;completed&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-004&quot;,
@@ -88,7 +102,7 @@ SQL: SELECT * FROM requests ORDER BY id
     &quot;details&quot;: &quot;คอมพิวเตอร์เครื่องที่ 5 เปิดไม่ติด&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-005&quot;,
@@ -98,7 +112,7 @@ SQL: SELECT * FROM requests ORDER BY id
     &quot;details&quot;: &quot;ขอเพิ่มปลั๊กไฟบริเวณโต๊ะอ่านหนังสือ&quot;,
     &quot;priority&quot;: &quot;normal&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-006&quot;,
@@ -108,7 +122,7 @@ SQL: SELECT * FROM requests ORDER BY id
     &quot;details&quot;: &quot;จอภาพห้องปฏิบัติการเปิดไม่ติด&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-007&quot;,
@@ -118,7 +132,7 @@ SQL: SELECT * FROM requests ORDER BY id
     &quot;details&quot;: &quot;ขอใช้ไมโครโฟนสำหรับการนำเสนอ&quot;,
     &quot;priority&quot;: &quot;normal&quot;,
     &quot;status&quot;: &quot;in-progress&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-008&quot;,
@@ -128,7 +142,7 @@ SQL: SELECT * FROM requests ORDER BY id
     &quot;details&quot;: &quot;ขอเพิ่มไฟส่องสว่างบริเวณทางเดิน&quot;,
     &quot;priority&quot;: &quot;normal&quot;,
     &quot;status&quot;: &quot;completed&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   }
 ]
 
@@ -142,7 +156,7 @@ SQL: SELECT * FROM requests WHERE status = &#039;pending&#039; ORDER BY id
     &quot;details&quot;: &quot;เครื่องปรับอากาศไม่ทำงานตั้งแต่เช้า&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-004&quot;,
@@ -152,7 +166,7 @@ SQL: SELECT * FROM requests WHERE status = &#039;pending&#039; ORDER BY id
     &quot;details&quot;: &quot;คอมพิวเตอร์เครื่องที่ 5 เปิดไม่ติด&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-005&quot;,
@@ -162,7 +176,7 @@ SQL: SELECT * FROM requests WHERE status = &#039;pending&#039; ORDER BY id
     &quot;details&quot;: &quot;ขอเพิ่มปลั๊กไฟบริเวณโต๊ะอ่านหนังสือ&quot;,
     &quot;priority&quot;: &quot;normal&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-006&quot;,
@@ -172,7 +186,7 @@ SQL: SELECT * FROM requests WHERE status = &#039;pending&#039; ORDER BY id
     &quot;details&quot;: &quot;จอภาพห้องปฏิบัติการเปิดไม่ติด&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   }
 ]
 
@@ -186,7 +200,7 @@ SQL: SELECT * FROM requests WHERE priority = &#039;urgent&#039; AND status &lt;&
     &quot;details&quot;: &quot;เครื่องปรับอากาศไม่ทำงานตั้งแต่เช้า&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-004&quot;,
@@ -196,7 +210,7 @@ SQL: SELECT * FROM requests WHERE priority = &#039;urgent&#039; AND status &lt;&
     &quot;details&quot;: &quot;คอมพิวเตอร์เครื่องที่ 5 เปิดไม่ติด&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-006&quot;,
@@ -206,7 +220,7 @@ SQL: SELECT * FROM requests WHERE priority = &#039;urgent&#039; AND status &lt;&
     &quot;details&quot;: &quot;จอภาพห้องปฏิบัติการเปิดไม่ติด&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   }
 ]
 
@@ -220,7 +234,7 @@ SQL: SELECT * FROM requests WHERE details LIKE &#039;%เครื่อง%&#03
     &quot;details&quot;: &quot;เครื่องปรับอากาศไม่ทำงานตั้งแต่เช้า&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-004&quot;,
@@ -230,7 +244,7 @@ SQL: SELECT * FROM requests WHERE details LIKE &#039;%เครื่อง%&#03
     &quot;details&quot;: &quot;คอมพิวเตอร์เครื่องที่ 5 เปิดไม่ติด&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   }
 ]
 
@@ -296,7 +310,7 @@ SQL: SELECT r.*, u.department FROM requests r JOIN users u ON u.id = r.requester
     &quot;details&quot;: &quot;เครื่องปรับอากาศไม่ทำงานตั้งแต่เช้า&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;,
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;,
     &quot;department&quot;: &quot;วิศวกรรมซอฟต์แวร์&quot;
   },
   {
@@ -307,7 +321,7 @@ SQL: SELECT r.*, u.department FROM requests r JOIN users u ON u.id = r.requester
     &quot;details&quot;: &quot;คอมพิวเตอร์เครื่องที่ 5 เปิดไม่ติด&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;,
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;,
     &quot;department&quot;: &quot;วิศวกรรมซอฟต์แวร์&quot;
   },
   {
@@ -318,7 +332,7 @@ SQL: SELECT r.*, u.department FROM requests r JOIN users u ON u.id = r.requester
     &quot;details&quot;: &quot;ขอใช้ไมโครโฟนสำหรับการนำเสนอ&quot;,
     &quot;priority&quot;: &quot;normal&quot;,
     &quot;status&quot;: &quot;in-progress&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;,
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;,
     &quot;department&quot;: &quot;วิศวกรรมซอฟต์แวร์&quot;
   },
   {
@@ -329,7 +343,7 @@ SQL: SELECT r.*, u.department FROM requests r JOIN users u ON u.id = r.requester
     &quot;details&quot;: &quot;เข้าสู่ระบบห้องปฏิบัติการไม่ได้&quot;,
     &quot;priority&quot;: &quot;normal&quot;,
     &quot;status&quot;: &quot;in-progress&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;,
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;,
     &quot;department&quot;: &quot;วิศวกรรมซอฟต์แวร์&quot;
   },
   {
@@ -340,7 +354,7 @@ SQL: SELECT r.*, u.department FROM requests r JOIN users u ON u.id = r.requester
     &quot;details&quot;: &quot;ขอเพิ่มไฟส่องสว่างบริเวณทางเดิน&quot;,
     &quot;priority&quot;: &quot;normal&quot;,
     &quot;status&quot;: &quot;completed&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;,
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;,
     &quot;department&quot;: &quot;วิศวกรรมซอฟต์แวร์&quot;
   },
   {
@@ -351,7 +365,7 @@ SQL: SELECT r.*, u.department FROM requests r JOIN users u ON u.id = r.requester
     &quot;details&quot;: &quot;จอภาพห้องปฏิบัติการเปิดไม่ติด&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;,
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;,
     &quot;department&quot;: &quot;วิศวกรรมซอฟต์แวร์&quot;
   }
 ]
@@ -385,7 +399,7 @@ SQL: SELECT * FROM requests ORDER BY created_at DESC, id DESC LIMIT 3
     &quot;details&quot;: &quot;ขอเพิ่มไฟส่องสว่างบริเวณทางเดิน&quot;,
     &quot;priority&quot;: &quot;normal&quot;,
     &quot;status&quot;: &quot;completed&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-007&quot;,
@@ -395,7 +409,7 @@ SQL: SELECT * FROM requests ORDER BY created_at DESC, id DESC LIMIT 3
     &quot;details&quot;: &quot;ขอใช้ไมโครโฟนสำหรับการนำเสนอ&quot;,
     &quot;priority&quot;: &quot;normal&quot;,
     &quot;status&quot;: &quot;in-progress&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   },
   {
     &quot;id&quot;: &quot;REQ-006&quot;,
@@ -405,7 +419,7 @@ SQL: SELECT * FROM requests ORDER BY created_at DESC, id DESC LIMIT 3
     &quot;details&quot;: &quot;จอภาพห้องปฏิบัติการเปิดไม่ติด&quot;,
     &quot;priority&quot;: &quot;urgent&quot;,
     &quot;status&quot;: &quot;pending&quot;,
-    &quot;created_at&quot;: &quot;2026-10-18 09:37:01&quot;
+    &quot;created_at&quot;: &quot;2026-10-18 09:50:12&quot;
   }
 ]
 

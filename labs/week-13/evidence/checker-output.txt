@@ -1,28 +1,28 @@
-Run: 2026-10-18T02:31:11.835Z
+Run: 2026-10-18T02:50:12.306Z
 Command: node --disable-warning=ExperimentalWarning check-week13.mjs --inclass
 Exit: 0
 
-POST /api/requests 413 2.641 ms - 488
-POST /api/auth/login 200 39.855 ms - 375
-POST /api/auth/login 401 31.246 ms - 93
-POST /api/auth/login 401 32.872 ms - 93
-POST /api/auth/login 401 32.293 ms - 93
-PUT /api/requests/REQ-001 401 0.448 ms - 69
-PUT /api/requests/REQ-001 401 0.936 ms - 69
+POST /api/requests 413 4.048 ms - 488
+POST /api/auth/login 200 44.264 ms - 375
+POST /api/auth/login 401 34.655 ms - 93
+POST /api/auth/login 401 35.539 ms - 93
+POST /api/auth/login 401 34.931 ms - 93
+PUT /api/requests/REQ-001 401 0.586 ms - 69
+PUT /api/requests/REQ-001 401 0.924 ms - 69
 PUT /api/requests/REQ-001 403 0.464 ms - 78
-PUT /api/requests/REQ-001 200 0.672 ms - 323
-DELETE /api/requests/REQ-003 204 0.442 ms - -
-GET /api/requests 200 0.330 ms - 1662
-POST /api/requests 201 0.481 ms - 260
-DELETE /api/requests/REQ-002 204 0.285 ms - -
-POST /api/requests 201 0.400 ms - 260
-GET /api/health 200 0.329 ms - 139
-POST /api/auth/login 401 31.940 ms - 93
-POST /api/auth/login 401 31.194 ms - 93
-POST /api/auth/login 401 29.837 ms - 93
-POST /api/auth/login 401 32.800 ms - 93
-POST /api/auth/login 401 34.021 ms - 93
-POST /api/auth/login 200 33.502 ms - 375
+PUT /api/requests/REQ-001 200 1.349 ms - 323
+DELETE /api/requests/REQ-003 204 0.530 ms - -
+GET /api/requests 200 0.593 ms - 1662
+POST /api/requests 201 0.795 ms - 260
+DELETE /api/requests/REQ-002 204 0.374 ms - -
+POST /api/requests 201 0.622 ms - 260
+GET /api/health 200 0.332 ms - 139
+POST /api/auth/login 401 34.752 ms - 93
+POST /api/auth/login 401 33.284 ms - 93
+POST /api/auth/login 401 36.690 ms - 93
+POST /api/auth/login 401 33.902 ms - 93
+POST /api/auth/login 401 34.632 ms - 93
+POST /api/auth/login 200 32.884 ms - 375
 
 ✅ CP48 ชื่อผู้แจ้ง 100 ตัวผ่าน · 101 ตัวถูกปฏิเสธ
 ✅ CP48 รายละเอียด 1000 ตัวผ่าน · 1001 ตัวถูกปฏิเสธ
