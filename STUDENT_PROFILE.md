@@ -2,11 +2,12 @@
 
 | รายการ | ข้อมูล |
 |---|---|
-| รายวิชา | ENGSE203 การเขียนโปรแกรมสำหรับวิศวกรซอฟต์แวร์ |
-| รหัสนักศึกษา | 68543210036-8 |
-| ชื่อ-นามสกุล | Pasit Petoumphun |
+| ชื่อ | นายพสิษฐิ์ เพชรอำพันธุ์ |
+| English name | Pasit Petoumphun |
+| รหัส | 68543210036-8 |
 | Section | SEC2 |
-| GitHub Username | pasitipp |
-| Repository | `engse203-student-labs-68543210036-8` |
-| Mode | `migration` |
-| Pages Hub | https://pasitipp.github.io/engse203-student-labs-68543210036-8/ |
+| Email | kimm122547@gmail.com |
+| GitHub | pasitipp |
+| Pages | https://pasitipp.github.io/engse203-student-labs-68543210036-8/ |
+
+Portfolio นี้ดูแล LAB 01–07 และ 09–13 ใน repo เดียว ไม่รวมสอบกลางภาค

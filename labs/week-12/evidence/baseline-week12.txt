@@ -1,0 +1,5 @@
+Observed baseline summary — 2026-10-18
+Command: node check-week12.mjs --inclass
+Result: 6/20 checkpoints passed before fixes.
+Observed failures: details length 10 rejected; delete-middle/create returned 500; update missing returned 500; in-progress summary incorrect.
+This file records observed results from the initial execution. It is not a verbatim captured terminal transcript.

@@ -1,0 +1,16 @@
+Run: 2026-10-18T02:27:09.338Z
+Command: npm.cmd test
+Exit: 0
+
+
+> engse203-campus-api@3.2.0 test
+> vitest run
+
+
+ RUN  v5.0.3 C:/Users/HP/class/ENGSE203/engse203-student-labs-68543210036-8/labs/week-13/source/api
+
+
+ Test Files  5 passed (5)
+      Tests  69 passed (69)
+   Start at  09:27:07
+   Duration  1.35s (tests 58%, import 29%, transform 12%, worker 1%)

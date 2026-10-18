@@ -1,28 +1,18 @@
-# Week 02 — Modern JavaScript Learning Dashboard
+# week-02 — Modern JavaScript Learning Dashboard
 
-## รุ่นใหม่
+Source: [source/](source/) · Real test logs: [evidence/](evidence/)
 
-เปิด `lab/week-02` แล้วคัดลอก LAB02 starter จาก Course Repository เข้า `source/`
+Automated results are in evidence/. Manual screenshots and explanation must be checked by the student. Current changes await review; previous tags retain their original contents.
 
-```bash
-npm --prefix labs/week-02/source install
-npm --prefix labs/week-02/source run check
-npm --prefix labs/week-02/source run build
-npm run import:publish -- week-02 labs/week-02/source/dist
+Instructor: https://github.com/se-rmutl/engse203-lab/tree/main/labs
+
+Regenerate this portfolio only after running the actual checks and builds:
+
+```sh
+node scripts/check-labs.mjs 02
+node scripts/build-lab-output.mjs 02
+node scripts/prepare-portfolio.mjs
+npm run build:pages
 ```
 
-Starter ใช้ Vite `base: './'` เพื่อให้ทำงานใต้ Pages Hub subpath
-
-## รุ่นปัจจุบันที่มี repo เดิม
-
-```bash
-npm run import:source -- week-02 /path/to/old-lab02
-```
-
-build โครงงานเดิมแล้ว import output ที่มี `index.html` เข้า publish พร้อมตั้ง `sourceOrigin: "migrated-repository"`
-
-## Evidence
-
-- Normal/error state
-- `npm run check` และ build
-- PR และ Pages result
+Commands above run from the repository root. See source package.json and instructor guide for individual development commands. Never commit a real .env, token, or personal password.

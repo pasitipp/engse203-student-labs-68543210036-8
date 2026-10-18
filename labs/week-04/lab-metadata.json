@@ -1,12 +1,14 @@
 {
   "week": "week-04",
   "title": "React Campus Service Request",
-  "status": "submitted",
+  "status": "revision",
   "sourceOrigin": "course-starter",
   "originalRepoUrl": "",
   "originalCommit": "",
   "pullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/4",
   "submissionTag": "lab-04-submission-v1",
   "testStatus": "pass",
-  "notes": "React/Vite build output ต้องอยู่ใน publish/ ก่อนสร้าง Pages Hub"
+  "notes": "Automated results are in evidence/. Manual screenshots and explanation must be checked by the student. Current changes await review; previous tags retain their original contents.",
+  "sourceRef": "labs/complete-01-13",
+  "resultType": "web"
 }

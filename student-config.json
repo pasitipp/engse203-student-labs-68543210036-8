@@ -1,9 +1,11 @@
 {
   "course": "ENGSE203",
   "studentId": "68543210036-8",
-  "studentName": "Pasit Petoumphun",
+  "studentName": "นายพสิษฐิ์ เพชรอำพันธุ์",
   "section": "SEC2",
   "githubUsername": "pasitipp",
   "repositoryName": "engse203-student-labs-68543210036-8",
-  "repositoryMode": "migration"
+  "repositoryMode": "new-course",
+  "studentNameEnglish": "Pasit Petoumphun",
+  "email": "kimm122547@gmail.com"
 }

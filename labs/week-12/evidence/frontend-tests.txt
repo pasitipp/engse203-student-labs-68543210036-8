@@ -1,0 +1,16 @@
+Run: 2026-10-18T02:27:10.278Z
+Command: npm.cmd test
+Exit: 0
+
+
+> engse203-week05-campus-service-request@0.3.0 test
+> vitest run
+
+
+ RUN  v5.0.3 C:/Users/HP/class/ENGSE203/engse203-student-labs-68543210036-8/labs/week-12/source/frontend
+
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  09:27:10
+   Duration  174ms (transform 56%, import 27%, worker 10%, tests 7%)

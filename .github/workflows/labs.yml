@@ -1,0 +1,28 @@
+name: Verify LAB portfolio
+on:
+  pull_request:
+  push:
+    branches: [main, labs/complete-01-13]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node scripts/install-lab-deps.mjs
+      - run: node scripts/build-lab-output.mjs
+      - run: node scripts/check-labs.mjs
+      - run: node --disable-warning=ExperimentalWarning scripts/record-sql-evidence.mjs
+      - run: node scripts/prepare-portfolio.mjs
+      - run: npm.cmd run build:pages
+      - run: npm.cmd run verify
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-evidence
+          path: labs/*/evidence/*.txt

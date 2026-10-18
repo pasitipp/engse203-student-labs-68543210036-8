@@ -1,59 +1,51 @@
-# ENGSE203 Student LAB Portfolio
+# ENGSE203 LAB Portfolio
 
-Repository เดียวสำหรับเก็บผลงาน LAB ตลอดรายวิชา โดยใช้ branch รายสัปดาห์และ GitHub Pages Hub สำหรับตรวจผลลัพธ์
+นายพสิษฐิ์ เพชรอำพันธุ์ · Pasit Petoumphun · 68543210036-8 · SEC2
+GitHub: pasitipp · email: kimm122547@gmail.com
 
-## เลือกเส้นทางเริ่มต้น
+12 LAB: 01–07 และ 09–13; Week08 เป็นสอบกลางภาค
 
-- **รุ่นถัดไป/ยังไม่เริ่ม LAB01:** อ่าน [START_HERE_BEFORE_LAB01.md](./START_HERE_BEFORE_LAB01.md)
-- **รุ่นปัจจุบันมี repo LAB01–03 แยกแล้ว:** อ่าน [START_HERE_LAB01_TO_LAB03.md](./START_HERE_LAB01_TO_LAB03.md)
-- **ทุกสัปดาห์:** ใช้ [WEEKLY_LAB_WORKFLOW.md](./WEEKLY_LAB_WORKFLOW.md)
+[Portfolio](https://pasitipp.github.io/engse203-student-labs-68543210036-8/) · [สิ่งที่ต้องทำก่อนส่ง](STUDENT_NEXT_STEPS.md) · [วิธีรัน](HOW_TO_RUN.md)
 
-```bash
-nvm use
-npm install
-npm run setup -- --student-id 6500000000 --name "ชื่อ นามสกุล" --section SEC1 --github github-user --mode new-course
-```
+## ผลตรวจในเครื่อง วันที่ 18 ตุลาคม 2569
 
-## Repository Contract
-
-| รายการ | รูปแบบ |
+| LAB | ผลอัตโนมัติ |
 |---|---|
-| Repository | `engse203-student-labs-<student-id>` |
-| Weekly branch | `lab/week-NN` |
-| Source | `labs/week-NN/source/` |
-| Evidence | `labs/week-NN/evidence/` |
-| Publish input | `labs/week-NN/publish/` |
-| Pages output | `docs/labs/week-NN/` |
-| Pages source | `main /docs` |
-| Submission | Pages Hub URL + Weekly Result URL + merged PR URL + submission tag |
+| 01 | greeting CLI และ Node unit test 1/1 |
+| 02 | official structure checker + Vite build ผ่าน |
+| 03 | JavaScript syntax check + Vite build ผ่าน (ยังต้อง manual UI checks) |
+| 04 | official verifier + Vite build ผ่าน |
+| 05 | instructor checker 136/136 + build ผ่าน; มีภาพเบราว์เซอร์จริง |
+| 06 | checker 28/28 |
+| 07 | checker 36/36 + API tests 12/12 + frontend build |
+| 09 | checker 30/30 + รัน SELECT และทดสอบ constraints จริง |
+| 10 | checker 31/31 + API tests 13/13 + frontend build |
+| 11 | checker 41/41 + API tests 14/14 + production build; วิดีโอรออัด |
+| 12 | in-class checker 20/20 + API tests 39/39 + frontend tests 3/3 + build |
+| 13 | in-class checker 23/23 + API tests 69/69 + frontend tests 3/3 + build |
 
-## คำสั่งหลัก
+ดู raw logs ใน labs/week-NN/evidence/ พร้อมวันและคำสั่งที่รัน
+ผลอัตโนมัติไม่ได้ยืนยันว่าหลักฐานส่วนตัวหรือการส่งงานครบแล้ว ดูรายการค้างใน STUDENT_NEXT_STEPS.md
 
-```bash
-npm run import:source -- week-01 /path/to/old-lab01-repository
-npm run import:publish -- week-03 labs/week-03/source
-npm run build:pages
-npm run verify
-```
+## โครงสร้างและ workflow
 
-ถ้า build ซ้ำ ใช้ `--replace` ต่อท้ายคำสั่ง `import:publish` หลังตรวจ week และ path แล้ว
+แต่ละ LAB มี source/, evidence/, publish/ และ lab-metadata.json; docs/ สร้างจาก publish และ metadata ห้ามแก้ด้วยมือ
+Pages เดิมใช้ main /docs; branch labs/complete-01-13 เป็นงานเตรียม review ก่อน merge
+API/SQL LAB แสดง evidence report บน Pages และต้องเปิดระบบจริงด้วย Node.js ในเครื่อง
 
-ห้ามแก้ไฟล์ใน `docs/` ด้วยมือ เพราะ `npm run build:pages` จะสร้างใหม่จาก config, metadata และโฟลเดอร์ `publish/`
+คำสั่งตรวจทั้งหมด (อย่ารัน test กับ checker พร้อมกันใน LAB เดียว):
 
-## Pages URL
+~~~powershell
+node scripts/install-lab-deps.mjs
+node scripts/build-lab-output.mjs
+node scripts/check-labs.mjs
+node --disable-warning=ExperimentalWarning scripts/record-sql-evidence.mjs
+node scripts/prepare-portfolio.mjs
+npm.cmd run build:pages
+npm.cmd run verify
+~~~
 
-```text
-https://<github-username>.github.io/engse203-student-labs-<student-id>/
-```
+## แหล่งที่มาและการใช้ AI
 
-## LAB ที่เตรียมไว้
-
-Template รุ่นนี้มี workspace LAB01–04 และ Pages Hub จะสร้างการ์ดจากทุก `labs/week-NN/` อัตโนมัติ
-
-## เพิ่ม LAB ในอนาคต
-
-```bash
-npm run add:lab -- week-05 "React Routing and Data"
-```
-
-จากนั้นใช้ workflow เดิมกับ `lab/week-05` และ `labs/week-05/`
+เริ่มจาก [starter ผู้สอน](https://github.com/se-rmutl/engse203-lab/tree/main/labs) ที่ 3e080d3 และงานเดิมของตนเอง ไม่มีการคัดลอกงานนักศึกษาคนอื่น ดู AI_USAGE.md ในแต่ละ LAB ใหม่
+ไม่เปลี่ยนวัน commit ย้อนหลัง ไม่ย้าย submission tag เก่า และไม่สร้างวิดีโอ/กิจกรรมในคาบแทนผู้จัดทำ
