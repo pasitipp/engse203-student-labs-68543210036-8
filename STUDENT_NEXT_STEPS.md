@@ -20,8 +20,8 @@
 - [ ] ตรวจหลักฐานส่วนตัวตามโจทย์ราย LAB: ภาพจาก VS Code, DevTools/CORS, SQL และคำตอบสะท้อนการเรียนรู้ หากผู้สอนกำหนด
 - [ ] LAB11 อัดวิดีโอด้วยเสียงของตนเอง แล้วส่ง URL เพื่อใส่ใน source/DEMO.md
 - [x] แยกและ push 12 branch lab/week-NN พร้อม PR ราย LAB #9–#20 (ดู COURSE_LAB_MAP.md)
-- [x] แยก PR #8 ให้เหลือเฉพาะหน้า Portfolio/shared tooling
-- [ ] Review/merge LAB ทีละ PR เมื่อพร้อม แล้วรวม Portfolio PR #8 ตาม COURSE_LAB_MAP.md
+- [x] แยก PR #21 ให้เหลือเฉพาะหน้า Portfolio/shared tooling
+- [ ] Review/merge LAB ทีละ PR เมื่อพร้อม แล้วรวม Portfolio PR #21 ตาม COURSE_LAB_MAP.md
 - [ ] ตรวจ GitHub Pages หลัง merge ว่ามี 12 การ์ดและลิงก์เปิดได้
 - [ ] จัด weekly PR / submission tag ตามรูปแบบที่ผู้สอนรับ ตรวจ tag เดิมก่อน ห้ามย้าย tag เก่าให้ชี้คนละงาน
 - [ ] ส่งลิงก์ Portfolio, ผลราย LAB, PR และ tag ในช่องทางผู้สอน
@@ -45,4 +45,4 @@ npm.cmd run verify
 
 ## สถานะการเผยแพร่
 
-ผู้จัดทำขอให้แยกทุก LAB: งานอยู่ใน lab/week-01–07 และ09–13 พร้อม PR #9–#20; PR #8 เฉพาะ Portfolio/shared tooling ยังไม่ merge main และยังไม่สร้าง submission tags ใหม่
+ผู้จัดทำขอให้แยกทุก LAB: งานอยู่ใน lab/week-01–07 และ09–13 พร้อม PR #9–#20; PR #21 เฉพาะ Portfolio/shared tooling ยังไม่ merge main และยังไม่สร้าง submission tags ใหม่

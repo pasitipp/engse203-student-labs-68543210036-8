@@ -7,7 +7,7 @@ GitHub: pasitipp · email: kimm122547@gmail.com
 
 - LAB01–07 และ LAB09–13 รวม 12 งาน; Week08 สอบกลางภาค
 - Branch: lab/week-NN (แต่ละ PR มีเฉพาะ LAB ของตัวเองและ CI/output ที่เกี่ยวข้อง)
-- Portfolio PR #8 รวมเฉพาะหน้าแสดงผล ลิงก์ และ shared tooling
+- Portfolio PR #21 รวมเฉพาะหน้าแสดงผล ลิงก์ และ shared tooling
 - Source/tests ของแต่ละ LAB อยู่ใน PR #9–#20
 
 [Portfolio](https://pasitipp.github.io/engse203-student-labs-68543210036-8/) · [สิ่งที่ต้องทำก่อนส่ง](STUDENT_NEXT_STEPS.md) · [วิธีรัน](HOW_TO_RUN.md)
@@ -20,7 +20,7 @@ GitHub: pasitipp · email: kimm122547@gmail.com
 ## Portfolio / หลังรวม PR
 
 Portfolio แสดง 12 การ์ดและชี้ Source/PR แยกกันทั้งหมด API/SQLite LAB แสดง evidence report เพราะ GitHub Pages รัน Express/SQLite ไม่ได้
-หลัง merge LAB ต่าง ๆ และ shared tooling ของ PR #8 แล้วจึงรันคำสั่งรวมบน main:
+หลัง merge LAB ต่าง ๆ และ shared tooling ของ PR #21 แล้วจึงรันคำสั่งรวมบน main:
 
 ~~~powershell
 node scripts/install-lab-deps.mjs

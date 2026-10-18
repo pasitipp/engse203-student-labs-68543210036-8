@@ -26,14 +26,14 @@ Week14–16 เป็น Final Term Project แยกจาก repo LAB นี�
 ## ขอบเขต PR
 
 แต่ละ PR เปลี่ยนเฉพาะ labs/week-NN/, docs/labs/week-NN/ และ .github/workflows/lab-NN.yml ของตัวเอง
-PR #8 เปลี่ยนเฉพาะหน้า Portfolio, shared tooling และเอกสารลิงก์ ไม่มีการแก้ labs/ รวมอยู่ใน diff
+PR #21 เปลี่ยนเฉพาะหน้า Portfolio, shared tooling และเอกสารลิงก์ ไม่มีการแก้ labs/ รวมอยู่ใน diff
 CI ของแต่ละ LAB ตรวจ source ของ LAB นั้นเอง ส่วน CI Portfolio ตรวจการ์ดและ asset/link ของหน้าเว็บ
 
 ## ก่อนส่ง
 
 1. Review งานใน PR ของแต่ละ LAB แยกกัน และทำหลักฐานส่วนตัวที่ค้างตามโจทย์
 2. ตรวจ CI แล้ว merge LAB ทีละ PR เมื่อพร้อม
-3. Review/merge Portfolio PR #8 สำหรับ index/config/shared verification และลิงก์รวม จากนั้น rebuild/verify บน main ที่รวมทุก LAB แล้ว
+3. Review/merge Portfolio PR #21 สำหรับ index/config/shared verification และลิงก์รวม จากนั้น rebuild/verify บน main ที่รวมทุก LAB แล้ว
 4. ตรวจ Pages ใน Incognito และส่ง PR/tag ตาม workflow ของผู้สอน ห้ามย้าย tag เดิมให้ชี้คนละงาน
 
 LAB11 ยังรอวิดีโอของผู้จัดทำ; LAB05 ยังรอคู่ทดสอบและ NOT RUN cases จึงไม่ได้อ้างว่าส่งครบหรือคะแนนเต็มแล้ว

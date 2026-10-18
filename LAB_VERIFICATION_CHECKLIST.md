@@ -40,7 +40,7 @@ Incognito: Chrome/Edge กด Ctrl+Shift+N แล้วเปิด Pages URL; F
 
 - [x] แยก branch ราย LAB ครบ 12 งาน
 - [x] แยก PR ราย LAB #9–#20 ไม่มี source LAB อื่นอยู่ใน diff
-- [x] Portfolio PR #8 แยกจาก source LAB
+- [x] Portfolio PR #21 แยกจาก source LAB
 - [x] CI ของ branch แยกราย LAB ผ่านครบ 12/12 (commit/ลิงก์ใน LAB_PR_STATUS.json)
 
 ดู COURSE_LAB_MAP.md สำหรับลิงก์ทั้งหมด; ผล CI 9fdd07a ด้านบนเป็นหลักฐานต้นทางก่อนแยก ไม่ใช่การอ้างว่า CI ราย PR แยกผ่านแล้ว

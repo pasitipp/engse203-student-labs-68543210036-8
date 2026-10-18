@@ -41,7 +41,7 @@ npm.cmd start
 
 ## Portfolio
 
-PR #8 เป็น shared tooling/หน้าแสดงลิงก์เท่านั้น Source ของ LAB แยกใน PR #9–#20
+PR #21 เป็น shared tooling/หน้าแสดงลิงก์เท่านั้น Source ของ LAB แยกใน PR #9–#20
 หลังรวม LAB และ shared tooling บน main แล้วจึงรันคำสั่งรวมใน root README เพื่อ rebuild/verify ทั้งรายวิชา
 ก่อนรวมครบ ตรวจ artifact ด้วย node scripts/verify-portfolio.mjs ใน branch ของ Portfolio
 GitHub Pages ใช้ main /docs; API/SQL แสดง evidence report เพราะ Pages รัน Express/SQLite ไม่ได้
