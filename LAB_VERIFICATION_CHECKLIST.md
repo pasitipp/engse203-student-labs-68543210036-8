@@ -23,7 +23,7 @@
 - [x] LAB02 ออนไลน์โหลดข้อมูล 6 รายการ ไม่มี Console errors ใน in-app browser
 - [x] LAB02 HTML, JS, CSS และ JSON ที่หน้าเว็บใช้ตอบ HTTP 200 (online-assets.json)
 - [ ] เปิด GitHub Pages ด้วย Incognito แล้วตรวจ Console/404 ด้วยตนเอง
-- [ ] GitHub Actions ของ commit ที่ push ล่าสุดผ่าน (เติมหลังขึ้น Git)
+- [x] GitHub Actions ตรวจโค้ด commit 9fdd07a ผ่าน (หลักฐาน: labs/week-02/evidence/github-actions.json)
 - [ ] Review และ merge PR ใหม่
 - [ ] ตรวจ Portfolio ออนไลน์ครบ 12 การ์ดหลัง merge
 - [ ] LAB11 วิดีโอเสียงของผู้จัดทำ
@@ -33,3 +33,5 @@
 Incognito: Chrome/Edge กด Ctrl+Shift+N แล้วเปิด Pages URL; F12 → Console ดู error และ Network ดู 404 รีโหลดหนึ่งครั้ง หากผ่านจึงติ๊กข้อ Incognito บน PR
 
 หมายเหตุ: verify:lab มี warning ว่าชื่อ branch รวมงานต่างจาก branch รายสัปดาห์ แต่ตรวจ structure/metadata/pages ผ่าน ไม่ได้เปลี่ยนเงื่อนไขของ checker ราย LAB เพื่อให้ผ่าน
+
+อัปเดต checkbox บน PR LAB เดิม #1, #2, #3, #4 และ #7 แล้ว โดยระบุว่าเป็นการตรวจซ้ำบน PR #8; แต่ละ PR ติ๊กข้อที่ตรวจได้ 7 ข้อ และเว้น Incognito
