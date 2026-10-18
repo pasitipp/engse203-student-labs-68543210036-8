@@ -1,6 +1,6 @@
 # Checklist ผลตรวจ LAB — 18 ตุลาคม 2569
 
-ช่องที่ติ๊กคือสิ่งที่ตรวจพบและรันสำเร็จจริง ไม่ได้หมายถึงส่งครบทุกหลักฐาน
+ช่องที่ติ๊กคือสิ่งที่ตรวจพบและรันสำเร็จจริงบน branch ของแต่ละ LAB และ workspace ก่อนแยก ไม่ได้หมายถึง source ทุก LAB อยู่ใน Portfolio PR หรือส่งครบทุกหลักฐาน
 
 | LAB | Source | Evidence | Publish/report | Metadata | Checker + repository verify |
 |---|---|---|---|---|---|
@@ -41,6 +41,6 @@ Incognito: Chrome/Edge กด Ctrl+Shift+N แล้วเปิด Pages URL; F
 - [x] แยก branch ราย LAB ครบ 12 งาน
 - [x] แยก PR ราย LAB #9–#20 ไม่มี source LAB อื่นอยู่ใน diff
 - [x] Portfolio PR #8 แยกจาก source LAB
-- [ ] CI ของ branch แยกราย LAB ผ่านครบ (ตรวจจาก PR แต่ละงาน)
+- [x] CI ของ branch แยกราย LAB ผ่านครบ 12/12 (commit/ลิงก์ใน LAB_PR_STATUS.json)
 
 ดู COURSE_LAB_MAP.md สำหรับลิงก์ทั้งหมด; ผล CI 9fdd07a ด้านบนเป็นหลักฐานต้นทางก่อนแยก ไม่ใช่การอ้างว่า CI ราย PR แยกผ่านแล้ว

@@ -1,7 +1,6 @@
 name: Verify Portfolio links
 on:
   pull_request:
-    paths: ['docs/**', 'scripts/verify-portfolio.mjs', 'scripts/build-pages.mjs', 'scripts/prepare-portfolio.mjs', 'student-config.json', '.github/workflows/labs.yml']
   push:
     branches: [main]
   workflow_dispatch:

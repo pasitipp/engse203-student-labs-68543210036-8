@@ -37,3 +37,7 @@ CI ของแต่ละ LAB ตรวจ source ของ LAB นั้น�
 4. ตรวจ Pages ใน Incognito และส่ง PR/tag ตาม workflow ของผู้สอน ห้ามย้าย tag เดิมให้ชี้คนละงาน
 
 LAB11 ยังรอวิดีโอของผู้จัดทำ; LAB05 ยังรอคู่ทดสอบและ NOT RUN cases จึงไม่ได้อ้างว่าส่งครบหรือคะแนนเต็มแล้ว
+
+## ผลตรวจ branch แยก
+
+CI ผ่านทั้ง 12 PR บน commit ของแต่ละ branch แล้ว ดู LAB_PR_STATUS.json ซึ่งบันทึก commit และลิงก์ CI จริง ขอบเขต diff ทุก PR ตรวจจาก GitHub API แล้วว่าไม่แตะ LAB อื่น
