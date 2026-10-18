@@ -11,6 +11,3 @@ npm install
 npm run dev
 npm run check
 npm run build
-```
-
-ผลตรวจและภาพเบราว์เซอร์อยู่ ../evidence/ ดู BROWSER_RESULTS.md สำหรับรายการที่ทดสอบจริง

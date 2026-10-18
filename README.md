@@ -3,49 +3,39 @@
 นายพสิษฐิ์ เพชรอำพันธุ์ · Pasit Petoumphun · 68543210036-8 · SEC2
 GitHub: pasitipp · email: kimm122547@gmail.com
 
-12 LAB: 01–07 และ 09–13; Week08 เป็นสอบกลางภาค
+แยกงานทุก LAB เป็น branch และ PR ของตัวเอง ดู [แผนและลิงก์ราย LAB](COURSE_LAB_MAP.md)
+
+- LAB01–07 และ LAB09–13 รวม 12 งาน; Week08 สอบกลางภาค
+- Branch: lab/week-NN (แต่ละ PR มีเฉพาะ LAB ของตัวเองและ CI/output ที่เกี่ยวข้อง)
+- Portfolio PR #8 รวมเฉพาะหน้าแสดงผล ลิงก์ และ shared tooling
+- Source/tests ของแต่ละ LAB อยู่ใน PR #9–#20
 
 [Portfolio](https://pasitipp.github.io/engse203-student-labs-68543210036-8/) · [สิ่งที่ต้องทำก่อนส่ง](STUDENT_NEXT_STEPS.md) · [วิธีรัน](HOW_TO_RUN.md)
 
-## ผลตรวจในเครื่อง วันที่ 18 ตุลาคม 2569
+## ตรวจงานแยก LAB
 
-| LAB | ผลอัตโนมัติ |
-|---|---|
-| 01 | greeting CLI และ Node unit test 1/1 |
-| 02 | official structure checker + Vite build ผ่าน |
-| 03 | JavaScript syntax check + Vite build ผ่าน (ยังต้อง manual UI checks) |
-| 04 | official verifier + Vite build ผ่าน |
-| 05 | instructor checker 136/136 + build ผ่าน; มีภาพเบราว์เซอร์จริง |
-| 06 | checker 28/28 |
-| 07 | checker 36/36 + API tests 12/12 + frontend build |
-| 09 | checker 30/30 + รัน SELECT และทดสอบ constraints จริง |
-| 10 | checker 31/31 + API tests 13/13 + frontend build |
-| 11 | checker 41/41 + API tests 14/14 + production build; วิดีโอรออัด |
-| 12 | in-class checker 20/20 + API tests 39/39 + frontend tests 3/3 + build |
-| 13 | in-class checker 23/23 + API tests 69/69 + frontend tests 3/3 + build |
+เปิด branch ที่ต้องการ แล้วอ่าน labs/week-NN/README.md; CI .github/workflows/lab-NN.yml ติดตั้งและตรวจ LAB นั้นเอง ใช้ Node.js 24
+โค้ดที่แยกมาจาก snapshot 90d044f ซึ่งผ่าน build/tests/checkers แล้ว มี logs และภาพจริงใน evidence/; CI ราย PR ตรวจซ้ำอีกครั้ง
 
-ดู raw logs ใน labs/week-NN/evidence/ พร้อมวันและคำสั่งที่รัน
-ผลอัตโนมัติไม่ได้ยืนยันว่าหลักฐานส่วนตัวหรือการส่งงานครบแล้ว ดูรายการค้างใน STUDENT_NEXT_STEPS.md
+## Portfolio / หลังรวม PR
 
-## โครงสร้างและ workflow
-
-แต่ละ LAB มี source/, evidence/, publish/ และ lab-metadata.json; docs/ สร้างจาก publish และ metadata ห้ามแก้ด้วยมือ
-Pages เดิมใช้ main /docs; branch labs/complete-01-13 เป็นงานเตรียม review ก่อน merge
-API/SQL LAB แสดง evidence report บน Pages และต้องเปิดระบบจริงด้วย Node.js ในเครื่อง
-
-คำสั่งตรวจทั้งหมด (อย่ารัน test กับ checker พร้อมกันใน LAB เดียว):
+Portfolio แสดง 12 การ์ดและชี้ Source/PR แยกกันทั้งหมด API/SQLite LAB แสดง evidence report เพราะ GitHub Pages รัน Express/SQLite ไม่ได้
+หลัง merge LAB ต่าง ๆ และ shared tooling ของ PR #8 แล้วจึงรันคำสั่งรวมบน main:
 
 ~~~powershell
 node scripts/install-lab-deps.mjs
 node scripts/build-lab-output.mjs
 node scripts/check-labs.mjs
-node --disable-warning=ExperimentalWarning scripts/record-sql-evidence.mjs
 node scripts/prepare-portfolio.mjs
 npm.cmd run build:pages
 npm.cmd run verify
 ~~~
 
-## แหล่งที่มาและการใช้ AI
+ห้ามแก้ docs/ ด้วยมือ; สร้างจาก metadata/publish ของ LAB ที่รวมแล้ว
+ก่อนรวมครบสามารถตรวจ artifact Portfolio ด้วย node scripts/verify-portfolio.mjs
 
-เริ่มจาก [starter ผู้สอน](https://github.com/se-rmutl/engse203-lab/tree/main/labs) ที่ 3e080d3 และงานเดิมของตนเอง ไม่มีการคัดลอกงานนักศึกษาคนอื่น ดู AI_USAGE.md ในแต่ละ LAB ใหม่
-ไม่เปลี่ยนวัน commit ย้อนหลัง ไม่ย้าย submission tag เก่า และไม่สร้างวิดีโอ/กิจกรรมในคาบแทนผู้จัดทำ
+## หลักฐานและการใช้ AI
+
+ใช้ starter ของผู้สอนและงานเดิมของตนเอง; Codex ช่วย implementation, testing และจัด branch/PR ดู AI_USAGE.md ในแต่ละ LAB
+ยังไม่อ้างว่าผู้จัดทำอัดวิดีโอ LAB11, ทำ paired regression หรือเข้าใจ/อธิบายโค้ดครบแล้ว ต้องทำด้วยตนเองก่อนส่ง
+ไม่มีการย้าย submission tags เก่าหรือเปลี่ยนวัน commit ย้อนหลัง

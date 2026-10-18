@@ -1,18 +1,22 @@
-# week-04 — React Campus Service Request
+# Week 04 — React Campus Service Request
 
-Source: [source/](source/) · Real test logs: [evidence/](evidence/)
+## เริ่มงาน
 
-Automated results are in evidence/. Manual screenshots and explanation must be checked by the student. Current changes await review; previous tags retain their original contents.
-
-Instructor: https://github.com/se-rmutl/engse203-lab/tree/main/labs
-
-Regenerate this portfolio only after running the actual checks and builds:
-
-```sh
-node scripts/check-labs.mjs 04
-node scripts/build-lab-output.mjs 04
-node scripts/prepare-portfolio.mjs
-npm run build:pages
+```bash
+git switch main
+git pull origin main
+git switch -c lab/week-04
 ```
 
-Commands above run from the repository root. See source package.json and instructor guide for individual development commands. Never commit a real .env, token, or personal password.
+คัดลอก LAB 4 starter จาก Course Repository มาไว้ใน `source/` แล้วรัน:
+
+```bash
+npm --prefix labs/week-04/source install
+npm --prefix labs/week-04/source run check
+npm --prefix labs/week-04/source run build
+npm run import:publish -- week-04 labs/week-04/source/dist
+```
+
+ใส่ผล TC-01–TC-12 และภาพ desktop/mobile ใน `evidence/` จากนั้นแก้ metadata, รัน `npm run build:pages` และ `npm run verify:lab -- week-04`
+
+Submission tag: `lab-04-submission-v1`

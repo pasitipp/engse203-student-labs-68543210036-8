@@ -35,3 +35,12 @@ Incognito: Chrome/Edge กด Ctrl+Shift+N แล้วเปิด Pages URL; F
 หมายเหตุ: verify:lab มี warning ว่าชื่อ branch รวมงานต่างจาก branch รายสัปดาห์ แต่ตรวจ structure/metadata/pages ผ่าน ไม่ได้เปลี่ยนเงื่อนไขของ checker ราย LAB เพื่อให้ผ่าน
 
 อัปเดต checkbox บน PR LAB เดิม #1, #2, #3, #4 และ #7 แล้ว โดยระบุว่าเป็นการตรวจซ้ำบน PR #8; แต่ละ PR ติ๊กข้อที่ตรวจได้ 7 ข้อ และเว้น Incognito
+
+## การแยกงานตามแผนการเรียน
+
+- [x] แยก branch ราย LAB ครบ 12 งาน
+- [x] แยก PR ราย LAB #9–#20 ไม่มี source LAB อื่นอยู่ใน diff
+- [x] Portfolio PR #8 แยกจาก source LAB
+- [ ] CI ของ branch แยกราย LAB ผ่านครบ (ตรวจจาก PR แต่ละงาน)
+
+ดู COURSE_LAB_MAP.md สำหรับลิงก์ทั้งหมด; ผล CI 9fdd07a ด้านบนเป็นหลักฐานต้นทางก่อนแยก ไม่ใช่การอ้างว่า CI ราย PR แยกผ่านแล้ว

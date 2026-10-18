@@ -1,8 +1,9 @@
 import { access, readFile, readdir } from 'node:fs/promises';
-import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
 
-const root = fileURLToPath(new URL('..', import.meta.url));
+const __filename = fileURLToPath(import.meta.url);
+const root = join(dirname(__filename), '..');
 const componentNames = ['AppHeader', 'SummaryPanel', 'RequestForm', 'FilterBar', 'RequestList', 'RequestCard'];
 const requiredFiles = [
   'src/App.jsx',

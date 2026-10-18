@@ -3,7 +3,6 @@ import path from 'node:path';
 import { ROOT, escapeHtml, exists, listLabs, readJson } from './common.mjs';
 
 // Run only after check-labs.mjs and build-lab-output.mjs have produced real evidence.
-const branch = 'labs/complete-01-13';
 const weeks = await listLabs();
 if (weeks.length !== 12 || weeks.includes('week-08')) throw new Error('Expected 12 LABs excluding midterm');
 const repo = 'https://github.com/pasitipp/engse203-student-labs-68543210036-8';
@@ -19,13 +18,14 @@ for (const week of weeks) {
     week, title: 'Quality & Security: Authentication, Authorization and Hardening', sourceOrigin: 'course-starter',
     originalRepoUrl: '', originalCommit: '', pullRequestUrl: `${repo}/pull/7`, submissionTag: 'lab-13-submission-v1',
   };
+  const branch = config.labSourceRefs?.[week] || metadata.sourceRef || 'main';
   // Checker success is automated evidence, not a claim of attendance, personal video or submitted tags.
   metadata.status = metadata.submissionTag ? 'revision' : 'ready';
   metadata.testStatus = 'pass';
   metadata.sourceRef = branch;
-  if (config.activePullRequestUrl) {
-    if (metadata.pullRequestUrl && metadata.pullRequestUrl !== config.activePullRequestUrl) metadata.previousPullRequestUrl = metadata.pullRequestUrl;
-    metadata.pullRequestUrl = config.activePullRequestUrl;
+  if (config.labPullRequests?.[week]) {
+    if (metadata.pullRequestUrl && metadata.pullRequestUrl !== config.labPullRequests[week] && !metadata.previousPullRequestUrl) metadata.previousPullRequestUrl = metadata.pullRequestUrl;
+    metadata.pullRequestUrl = config.labPullRequests[week];
   }
   metadata.notes = week === 'week-11'
     ? 'Local build and automated checks pass. Personal demo video CP42 is pending; DEMO.md is a recording guide, not video evidence. No cloud service has been deployed.'
@@ -47,6 +47,5 @@ for (const week of weeks) {
   } else {
     await fs.writeFile(path.join(publish, 'index.html'), `<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${week} evidence</title><style>body{font:16px/1.65 Tahoma,sans-serif;background:#edf3f8;color:#172d43;margin:0}main{max-width:1000px;margin:24px auto;background:white;padding:28px;border-radius:14px}a{color:#1469a8}pre{overflow:auto;white-space:pre-wrap;background:#f1f5f9;padding:16px;font:13px/1.6 monospace}summary{cursor:pointer;padding:12px;background:#e6f0f7;margin-top:12px}h1{line-height:1.3}</style></head><body><main><a href="../../index.html">← LAB Portfolio</a><h1>${week}: ${escapeHtml(metadata.title)}</h1><p>${escapeHtml(metadata.notes)}</p><p>หน้านี้แสดงผลตรวจจากเครื่องจริง API และ SQLite ต้องรันด้วย Node.js ในเครื่อง; GitHub Pages ให้บริการได้เฉพาะไฟล์ static</p><p><a href="${repo}/tree/${branch}/labs/${week}/source">Source / run instructions</a> · <a href="${repo}/tree/${branch}/labs/${week}/evidence">Evidence</a></p>${sections.join('\n')}</main></body></html>`);
   }
-  await fs.writeFile(path.join(root, 'README.md'), `# ${week} — ${metadata.title}\n\nSource: [source/](source/) · Real test logs: [evidence/](evidence/)\n\n${metadata.notes}\n\nInstructor: https://github.com/se-rmutl/engse203-lab/tree/main/labs\n\nRegenerate this portfolio only after running the actual checks and builds:\n\n\`\`\`sh\nnode scripts/check-labs.mjs ${week.slice(-2)}\nnode scripts/build-lab-output.mjs ${week.slice(-2)}\nnode scripts/prepare-portfolio.mjs\nnpm run build:pages\n\`\`\`\n\nCommands above run from the repository root. See source package.json and instructor guide for individual development commands. Never commit a real .env, token, or personal password.\n`);
 }
 console.log('Prepared 12 LAB cards and reports from recorded verification logs.');

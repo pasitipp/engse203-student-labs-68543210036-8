@@ -1,13 +1,14 @@
-name: Verify LAB portfolio
+name: Verify Portfolio links
 on:
   pull_request:
+    paths: ['docs/**', 'scripts/verify-portfolio.mjs', 'scripts/build-pages.mjs', 'scripts/prepare-portfolio.mjs', 'student-config.json', '.github/workflows/labs.yml']
   push:
     branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: labs-${{ github.ref }}
+  group: portfolio-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   verify:
@@ -17,15 +18,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node scripts/install-lab-deps.mjs
-      - run: node scripts/build-lab-output.mjs
-      - run: node scripts/check-labs.mjs
-      - run: node --disable-warning=ExperimentalWarning scripts/record-sql-evidence.mjs
-      - run: node scripts/prepare-portfolio.mjs
-      - run: npm.cmd run build:pages
-      - run: npm.cmd run verify
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: verification-evidence
-          path: labs/*/evidence/*.txt
+      - name: Validate twelve separate LAB links and published assets
+        run: node scripts/verify-portfolio.mjs

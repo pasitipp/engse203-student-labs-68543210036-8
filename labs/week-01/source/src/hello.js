@@ -9,5 +9,4 @@ function createGreeting({ name, studentId, os, node }) {
   return `Hello ${name} (${studentId}) | OS: ${os} | Node: ${node}`;
 }
 
-if (require.main === module) console.log(createGreeting(student));
-module.exports = { student, createGreeting };
+console.log(createGreeting(student));
