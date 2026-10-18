@@ -1,0 +1,19 @@
+{
+  "week": "week-07",
+  "title": "RESTful API, Validation and Error Handling",
+  "status": "ready",
+  "sourceOrigin": "course-starter",
+  "originalRepoUrl": "",
+  "originalCommit": "",
+  "pullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/15",
+  "submissionTag": "",
+  "testStatus": "pass",
+  "notes": "Automated results are in evidence/. Manual screenshots and explanation must be checked by the student. Current changes await review; previous tags retain their original contents.",
+  "sourceRef": "lab/week-07",
+  "resultType": "report",
+  "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/8",
+  "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-07/",
+  "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-07/labs/week-07/source",
+  "hasPublish": true,
+  "sourceEntries": 6
+}
