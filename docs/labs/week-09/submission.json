@@ -1,0 +1,18 @@
+{
+  "week": "week-09",
+  "title": "Relational Database and SQL (SQLite)",
+  "status": "ready",
+  "sourceOrigin": "course-starter",
+  "originalRepoUrl": "",
+  "originalCommit": "",
+  "pullRequestUrl": "",
+  "submissionTag": "",
+  "testStatus": "pass",
+  "notes": "Automated results are in evidence/. Manual screenshots and explanation must be checked by the student. This LAB is reviewed in its own pull request; previous tags retain their original contents.",
+  "sourceRef": "lab/week-09",
+  "resultType": "report",
+  "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-09/",
+  "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab/week-09/labs/week-09/source",
+  "hasPublish": true,
+  "sourceEntries": 7
+}
