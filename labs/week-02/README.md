@@ -1,28 +1,27 @@
-# Week 02 — Modern JavaScript Learning Dashboard
+# LAB02 — Modern JavaScript Learning Dashboard
 
-## รุ่นใหม่
+นายพสิษฐิ์ เพชรอำพันธุ์ · 68543210036-8 · SEC2
 
-เปิด `lab/week-02` แล้วคัดลอก LAB02 starter จาก Course Repository เข้า `source/`
+Branch: `lab/week-02` — PR นี้เปลี่ยนเฉพาะ LAB02, output ของ LAB เดียวกัน และ CI ของ LAB นี้
 
-```bash
-npm --prefix labs/week-02/source install
-npm --prefix labs/week-02/source run check
-npm --prefix labs/week-02/source run build
-npm run import:publish -- week-02 labs/week-02/source/dist
-```
+Source: [source/](source/) · Evidence: [evidence/](evidence/) · Output/report: [publish/](publish/)
 
-Starter ใช้ Vite `base: './'` เพื่อให้ทำงานใต้ Pages Hub subpath
+## รันและตรวจ LAB นี้แยกต่างหาก
 
-## รุ่นปัจจุบันที่มี repo เดิม
+ใช้ Node.js 24 แล้วรันจาก repository root:
 
-```bash
-npm run import:source -- week-02 /path/to/old-lab02
-```
+~~~powershell
+Set-Location labs/week-02/source
+npm.cmd ci
+npm.cmd run check
+npm.cmd run build
+~~~
 
-build โครงงานเดิมแล้ว import output ที่มี `index.html` เข้า publish พร้อมตั้ง `sourceOrigin: "migrated-repository"`
+ดู source/README.md และ package.json สำหรับการเปิด dev/API; ใช้ .env.example สร้าง .env ในเครื่องเท่านั้น ห้าม commit secret
 
-## Evidence
+ผลที่แนบใน evidence/ มาจากการรันจริงบนโค้ดต้นทาง 90d044f; CI ของ PR นี้จะตรวจ LAB นี้ซ้ำแยกต่างหาก ไม่ได้ยืนยันหลักฐานส่วนตัวครบแล้ว
 
-- Normal/error state
-- `npm run check` และ build
-- PR และ Pages result
+แผนการเรียน: https://se-rmutl.github.io/engse203/#roadmap
+โจทย์จริง: ดู starter ของสัปดาห์นี้ใน https://github.com/se-rmutl/engse203-lab/tree/main/labs
+
+การรวมลิงก์ทั้งรายวิชาอยู่ใน Portfolio PR แยก ไม่ได้รวม source ของทุก LAB ไว้ใน PR นี้
