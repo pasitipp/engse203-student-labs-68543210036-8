@@ -1,13 +1,13 @@
-Run: 2026-10-18T02:50:08.778Z
-Command: node --disable-warning=ExperimentalWarning check-week12.mjs --inclass
+Run: 2026-10-19T08:17:32.643Z
+Command: node --disable-warning=ExperimentalWarning check-week12.mjs
 Exit: 0
 
-POST /api/auth/login 404 11.797 ms - 69
-DELETE /api/requests/REQ-002 204 0.487 ms - -
-POST /api/requests 201 0.941 ms - 260
-POST /api/auth/login 404 0.307 ms - 69
-PUT /api/requests/REQ-999 404 0.517 ms - 65
-GET /api/health 200 0.503 ms - 139
+POST /api/auth/login 404 10.521 ms - 69
+DELETE /api/requests/REQ-002 204 0.506 ms - -
+POST /api/requests 201 0.876 ms - 260
+POST /api/auth/login 404 0.270 ms - 69
+PUT /api/requests/REQ-999 404 0.341 ms - 65
+GET /api/health 200 0.313 ms - 139
 
 ✅ CP44 api ใช้ Vitest (script test = vitest)
 ✅ CP44 test ใช้ฐานข้อมูลแยก (DB_FILE :memory: ใน vitest.config.js)
@@ -29,9 +29,14 @@ GET /api/health 200 0.503 ms - 139
 ✅ CP47 regression test BUG #2 (นับ in-progress)
 ✅ CP47 regression test BUG #3 (PUT คำร้องที่ไม่มี → 404)
 ✅ CP47 DEBUG_LOG.md ระบุสาเหตุครบ 4 bug
+✅ CHAL ⭐ coverage ของ api ≥ 85% (statements)
+✅ CHAL ⭐ CI รัน npm test ทุกครั้งที่ push
 
 ──────────────────────────────────────────────────────────
 🏫 ในห้อง (CP44–CP47)   ผ่าน 20/20 รายการ
+⭐ Challenge            ผ่าน 2/2 รายการ
+──────────────────────────────────────────────────────────
+ผ่าน 22/22 รายการ
 
 หมายเหตุ: checker ตรวจได้ว่า bug หายและมี test กัน แต่ตรวจไม่ได้ว่าเข้าใจสาเหตุ
 ผู้สอนจะถามให้เล่าว่าใช้เครื่องมือไหนหาเจอ และทำไมแก้ตรงนั้น

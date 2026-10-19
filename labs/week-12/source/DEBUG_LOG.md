@@ -39,3 +39,9 @@
 - **test ที่กัน:** tests/integration/requests.api.test.js: regression BUG3 missing update returns 404
 
 ผลก่อนแก้ 6/20 เป็น observed summary ใน ../evidence/baseline-week12.txt; ผลหลังแก้ดู ../evidence/checker-output.txt และ test logs
+
+## Challenge completion — 2026-10-19
+
+- Fixed GET /api/users and /api/users/:id/requests: routes referenced missing service functions, causing HTTP 500. Added parameterized history queries and a public projection without email.
+- Added integration coverage for health, API discovery, malformed JSON, 404, per-user histories, and transactional rollback. Added error-handler and completion-logger unit tests.
+- Statement coverage measured at 96.24% (threshold 85%); no source exclusions added. CI runs the full instructor checker, tests and coverage on matching pushes and pull requests.
