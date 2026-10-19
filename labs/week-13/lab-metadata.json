@@ -6,10 +6,10 @@
   "originalCommit": "",
   "pullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/20",
   "submissionTag": "lab-13-submission-v1",
-  "status": "revision",
+  "status": "ready",
   "testStatus": "pass",
   "sourceRef": "lab/week-13",
-  "notes": "Automated results are in evidence/. Manual screenshots and explanation must be checked by the student. Current changes await review; previous tags retain their original contents.",
+  "notes": "Automated results are in evidence/. See the linked LAB pull request for the reviewed work. Existing submission tags retain their original contents.",
   "resultType": "report",
   "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/7"
 }

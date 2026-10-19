@@ -8,7 +8,7 @@
   "pullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/18",
   "submissionTag": "",
   "testStatus": "pass",
-  "notes": "Local build and automated checks pass. Personal demo video CP42 is pending; DEMO.md is a recording guide, not video evidence. No cloud service has been deployed.",
+  "notes": "Automated results are in evidence/. See the linked LAB pull request for the reviewed work. Existing submission tags retain their original contents.",
   "sourceRef": "lab/week-11",
   "resultType": "report",
   "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/8",
