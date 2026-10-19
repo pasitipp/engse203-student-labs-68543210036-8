@@ -15,8 +15,8 @@ const jobs=[
  ['09','node --disable-warning=ExperimentalWarning check-week09.mjs'],
  ['10','node --disable-warning=ExperimentalWarning check-week10.mjs'],
  ['11','node --disable-warning=ExperimentalWarning check-week11.mjs'],
- ['12','node --disable-warning=ExperimentalWarning check-week12.mjs --inclass'],
- ['13','node --disable-warning=ExperimentalWarning check-week13.mjs --inclass'],
+ ['12','node --disable-warning=ExperimentalWarning check-week12.mjs'],
+ ['13','node --disable-warning=ExperimentalWarning check-week13.mjs'],
 ].filter(([number])=>!selected.size||selected.has(number));
 const results=[];
 for(const [number,command] of jobs){
@@ -30,7 +30,7 @@ for(const [number,command] of jobs){
  const target=path.join(root,'labs',week,'evidence');fs.mkdirSync(target,{recursive:true});
  fs.writeFileSync(path.join(target,'checker-output.txt'),`Run: ${new Date().toISOString()}\nCommand: ${command}\nExit: ${result.exitCode}\n\n${result.output.trimEnd()}\n`);
  // Several instructor checkers exit 0 even when mandatory checkpoints are incomplete.
- const mandatoryTodo = result.output.split('\n').filter(line => /\[TODO\]/.test(line) && !/\[TODO\]\s+CHAL/.test(line));
+ const mandatoryTodo = result.output.split('\n').filter(line => /\[TODO\]/.test(line));
  if (mandatoryTodo.length || /\[FAIL\]|^FAIL\b/m.test(result.output)) result.exitCode = 1;
  const relevant=result.output.split('\n').filter(l=>/\[TODO\]|\[FAIL\]|^FAIL|ผ่าน \d|passed|PASS|Error:|ERR_|Cannot|❌|✗/.test(l));
  console.log(`\n=== ${week} (exit ${result.exitCode}) ===\n${relevant.join('\n').slice(-6500) || result.output.slice(-500)}`);
