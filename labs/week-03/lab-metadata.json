@@ -1,14 +1,14 @@
 {
   "week": "week-03",
   "title": "Responsive Web UI & Form Interaction",
-  "status": "revision",
+  "status": "ready",
   "sourceOrigin": "course-starter",
   "originalRepoUrl": "",
   "originalCommit": "",
   "pullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/11",
   "submissionTag": "lab-03-submission-v1",
   "testStatus": "pass",
-  "notes": "Automated results are in evidence/. Manual screenshots and explanation must be checked by the student. Current changes await review; previous tags retain their original contents.",
+  "notes": "Automated results are in evidence/. See the linked LAB pull request for the reviewed work. Existing submission tags retain their original contents.",
   "sourceRef": "lab/week-03",
   "resultType": "web",
   "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/3"

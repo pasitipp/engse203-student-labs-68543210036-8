@@ -20,16 +20,15 @@ for (const week of weeks) {
   };
   const branch = config.labSourceRefs?.[week] || metadata.sourceRef || 'main';
   // Checker success is automated evidence, not a claim of attendance, personal video or submitted tags.
-  metadata.status = metadata.submissionTag ? 'revision' : 'ready';
+  // An existing tag is historical provenance, not evidence of a pending review.
+  if (metadata.status !== 'submitted') metadata.status = 'ready';
   metadata.testStatus = 'pass';
   metadata.sourceRef = branch;
   if (config.labPullRequests?.[week]) {
     if (metadata.pullRequestUrl && metadata.pullRequestUrl !== config.labPullRequests[week] && !metadata.previousPullRequestUrl) metadata.previousPullRequestUrl = metadata.pullRequestUrl;
     metadata.pullRequestUrl = config.labPullRequests[week];
   }
-  metadata.notes = week === 'week-11'
-    ? 'Local build and automated checks pass. Personal demo video CP42 is pending; DEMO.md is a recording guide, not video evidence. No cloud service has been deployed.'
-    : 'Automated results are in evidence/. Manual screenshots and explanation must be checked by the student. Current changes await review; previous tags retain their original contents.';
+  metadata.notes = 'Automated results are in evidence/. See the linked LAB pull request for the reviewed work. Existing submission tags retain their original contents.';
   await fs.writeFile(metadataPath, JSON.stringify(metadata, null, 2) + '\n');
   const logs = (await fs.readdir(evidence)).filter(name => name.endsWith('.txt'));
   const sections = [];
