@@ -1,9 +1,12 @@
 import { Router } from 'express';
 import * as authService from '../services/authService.js';
 import { validateLoginInput } from '../validators/requestValidator.js';
+import { createLoginLimiter } from '../middleware/loginLimiter.js';
 
 // route ให้มาแล้ว — งานหลักอยู่ใน services/authService.js (CP50)
+export default function createAuthRoutes(limiterOptions) {
 const router = Router();
+router.use('/login', createLoginLimiter(limiterOptions));
 
 router.post('/login', (req, res) => {
   const errors = validateLoginInput(req.body);
@@ -17,4 +20,5 @@ router.post('/login', (req, res) => {
   res.status(200).json(result);
 });
 
-export default router;
+return router;
+}

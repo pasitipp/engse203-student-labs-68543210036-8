@@ -123,3 +123,11 @@ curl -X POST localhost:3001/api/auth/login -H "Content-Type: application/json" \
 curl -X PUT localhost:3001/api/requests/REQ-001 -H "Authorization: Bearer <token>" \
   -H "Content-Type: application/json" -d '{"status":"completed"}'
 ```
+
+## Challenge completion — 2026-10-19
+
+- Every response includes X-Content-Type-Options: nosniff; framework disclosure is disabled.
+- Login allows five failed password attempts per IP + normalized email in 15 minutes. The sixth request receives 429 and Retry-After. Success clears earlier failures; the window expires automatically. State belongs to each app instance and resets on restart (single-instance LAB deployment).
+- frontend/src/services/apiClient.js exports login(email, password), setAccessToken and clearAccessToken. A successful login keeps the token in memory and adds Authorization: Bearer to later API calls. A 401 or logout clears the token; refreshing signs out. Custom headers are preserved.
+- render.yaml generates JWT_SECRET on Render. No secret value is committed. This change prepares configuration and does not start a new deployment.
+- CI runs the full instructor checker including all four Challenges. Security regression tests cover lockout, expiry, successful login reset, malformed input, app isolation and response headers.
