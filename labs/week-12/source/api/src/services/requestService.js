@@ -31,4 +31,6 @@ export function create(input) {
 export function updateStatus(id,status){ if(!findById(id))return null; db.prepare('UPDATE requests SET status = ? WHERE id = ?').run(status,id); return findById(id); }
 export function remove(id){return db.prepare('DELETE FROM requests WHERE id = ?').run(id).changes>0;}
 export function findAllUsers(){return db.prepare('SELECT id,name,department,email FROM users ORDER BY id').all();}
+export function listUsers(){return db.prepare('SELECT id,name,department FROM users ORDER BY id').all();}
+export function listRequestsByUser(userId){return db.prepare(SELECT+' WHERE r.requester_id = ? ORDER BY r.id').all(userId);}
 export function getDbStatus(){try{return {connected:true,driver:'sqlite',tables:db.prepare("SELECT count(*) n FROM sqlite_master WHERE type='table'").get().n};}catch{return {connected:false,driver:'sqlite'};}}
