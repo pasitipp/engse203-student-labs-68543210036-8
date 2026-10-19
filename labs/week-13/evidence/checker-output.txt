@@ -1,28 +1,28 @@
-Run: 2026-10-18T02:50:12.306Z
-Command: node --disable-warning=ExperimentalWarning check-week13.mjs --inclass
+Run: 2026-10-19T08:17:36.059Z
+Command: node --disable-warning=ExperimentalWarning check-week13.mjs
 Exit: 0
 
-POST /api/requests 413 4.048 ms - 488
-POST /api/auth/login 200 44.264 ms - 375
-POST /api/auth/login 401 34.655 ms - 93
-POST /api/auth/login 401 35.539 ms - 93
-POST /api/auth/login 401 34.931 ms - 93
-PUT /api/requests/REQ-001 401 0.586 ms - 69
-PUT /api/requests/REQ-001 401 0.924 ms - 69
-PUT /api/requests/REQ-001 403 0.464 ms - 78
-PUT /api/requests/REQ-001 200 1.349 ms - 323
-DELETE /api/requests/REQ-003 204 0.530 ms - -
-GET /api/requests 200 0.593 ms - 1662
-POST /api/requests 201 0.795 ms - 260
-DELETE /api/requests/REQ-002 204 0.374 ms - -
-POST /api/requests 201 0.622 ms - 260
-GET /api/health 200 0.332 ms - 139
-POST /api/auth/login 401 34.752 ms - 93
-POST /api/auth/login 401 33.284 ms - 93
-POST /api/auth/login 401 36.690 ms - 93
-POST /api/auth/login 401 33.902 ms - 93
-POST /api/auth/login 401 34.632 ms - 93
-POST /api/auth/login 200 32.884 ms - 375
+POST /api/requests 413 2.876 ms - 488
+POST /api/auth/login 200 40.194 ms - 375
+POST /api/auth/login 401 33.559 ms - 93
+POST /api/auth/login 401 31.781 ms - 93
+POST /api/auth/login 401 32.333 ms - 93
+PUT /api/requests/REQ-001 401 0.542 ms - 69
+PUT /api/requests/REQ-001 401 0.830 ms - 69
+PUT /api/requests/REQ-001 403 0.452 ms - 78
+PUT /api/requests/REQ-001 200 0.944 ms - 323
+DELETE /api/requests/REQ-003 204 0.662 ms - -
+GET /api/requests 200 0.328 ms - 1662
+POST /api/requests 201 0.643 ms - 260
+DELETE /api/requests/REQ-002 204 0.338 ms - -
+POST /api/requests 201 0.399 ms - 260
+GET /api/health 200 0.419 ms - 139
+POST /api/auth/login 401 57.885 ms - 93
+POST /api/auth/login 401 59.283 ms - 93
+POST /api/auth/login 401 57.109 ms - 93
+POST /api/auth/login 401 89.512 ms - 93
+POST /api/auth/login 429 0.348 ms - 139
+POST /api/auth/login 429 0.361 ms - 139
 
 ✅ CP48 ชื่อผู้แจ้ง 100 ตัวผ่าน · 101 ตัวถูกปฏิเสธ
 ✅ CP48 รายละเอียด 1000 ตัวผ่าน · 1001 ตัวถูกปฏิเสธ
@@ -47,9 +47,16 @@ POST /api/auth/login 200 32.884 ms - 375
 ✅ CP52 production: error ไม่ส่ง stack trace ให้ผู้ใช้
 ✅ CP52 .env.example มี JWT_SECRET ค่าว่าง และ .gitignore มี .env (ไม่ commit ค่าลับ)
 ✅ CP52 npm test ใน api ผ่านทุกข้อ และมี test ของ 401 กับ 403
+✅ CHAL ⭐ มี security header (X-Content-Type-Options: nosniff)
+✅ CHAL ⭐ ผิดเกิน 5 ครั้ง → 429 (จำกัดการเดารหัสผ่าน)
+✅ CHAL ⭐ frontend แนบ Authorization: Bearer ทุกคำขอ (ทำต่อใน Term Project)
+✅ CHAL ⭐ render.yaml ให้ Render สร้าง JWT_SECRET (generateValue)
 
 ──────────────────────────────────────────────────────────
 🏫 ในห้อง (CP48–CP52)   ผ่าน 23/23 รายการ
+⭐ Challenge            ผ่าน 4/4 รายการ
+──────────────────────────────────────────────────────────
+ผ่าน 27/27 รายการ
 
 หมายเหตุ: checker ตรวจพฤติกรรมด้านความปลอดภัยได้ แต่ตรวจไม่ได้ว่าเข้าใจเหตุผล
 ผู้สอนจะถามว่า 401 ต่างจาก 403 อย่างไร และทำไมต้อง hash รหัสผ่าน

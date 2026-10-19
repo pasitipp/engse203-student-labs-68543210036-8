@@ -3,7 +3,6 @@ on:
   pull_request:
     paths: ['labs/week-13/**', 'docs/labs/week-13/**', '.github/workflows/lab-13.yml']
   push:
-    branches: [main]
     paths: ['labs/week-13/**', 'docs/labs/week-13/**', '.github/workflows/lab-13.yml']
   workflow_dispatch:
 permissions:
@@ -43,12 +42,12 @@ jobs:
       - name: Instructor checker
         run: |
           $env:NODE_NO_WARNINGS = '1'
-          $output = (& node --disable-warning=ExperimentalWarning check-week13.mjs --inclass 2>&1 | Out-String)
+          $output = (& node --disable-warning=ExperimentalWarning check-week13.mjs 2>&1 | Out-String)
           $result = $LASTEXITCODE
           Write-Output $output
           $output | Set-Content -Encoding utf8 ../evidence/split-ci-checker.txt
           if ($result -ne 0) { throw 'Checker process failed' }
-          $mandatory = $output -split '\r?\n' | Where-Object { ($_ -match '\[TODO\]') -and ($_ -notmatch '\[TODO\]\s+CHAL') }
+          $mandatory = $output -split '\r?\n' | Where-Object { $_ -match '\[TODO\]' }
           if ($mandatory -or $output -match '(?m)\[FAIL\]|^FAIL\b|❌') { throw 'Mandatory checkpoint failed' }
       - uses: actions/upload-artifact@v4
         if: always()

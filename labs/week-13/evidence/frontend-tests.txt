@@ -1,4 +1,4 @@
-Run: 2026-10-18T02:49:57.484Z
+Run: 2026-10-19T08:17:40.352Z
 Command: npm.cmd test
 Exit: 0
 
@@ -10,7 +10,7 @@ Exit: 0
  RUN  v5.0.3 C:/Users/HP/class/ENGSE203/engse203-student-labs-68543210036-8/labs/week-13/source/frontend
 
 
- Test Files  1 passed (1)
-      Tests  3 passed (3)
-   Start at  09:49:57
-   Duration  198ms (transform 56%, import 26%, worker 11%, tests 7%)
+ Test Files  2 passed (2)
+      Tests  9 passed (9)
+   Start at  15:17:40
+   Duration  232ms (transform 55%, import 19%, tests 18%, worker 9%)
