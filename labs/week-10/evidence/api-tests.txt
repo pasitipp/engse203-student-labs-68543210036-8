@@ -1,4 +1,4 @@
-Run: 2026-10-18T02:49:50.668Z
+Run: 2026-10-19T08:17:33.875Z
 Command: npm.cmd test
 Exit: 0
 
@@ -6,34 +6,34 @@ Exit: 0
 > engse203-week06-campus-api@2.0.0 test
 > node --disable-warning=ExperimentalWarning --test "tests/*.test.js"
 
-GET /api/requests 200 1.977 ms - 2562
-✔ GET list returns array (25.0198ms)
-GET /api/requests 200 0.327 ms - 2562
-✔ GET list contains requesterName (4.9468ms)
-GET /api/requests/REQ-001 200 0.446 ms - 321
-✔ GET existing id (5.0888ms)
-GET /api/requests/REQ-999 404 0.291 ms - 65
-✔ GET missing id (4.3749ms)
-POST /api/requests 201 10.028 ms - 270
-✔ POST creates pending record (14.9555ms)
-POST /api/requests 400 0.413 ms - 514
-✔ POST incomplete rejected (4.6403ms)
-GET /api/requests 200 0.250 ms - 2562
-✔ CORS allowed origin (3.9684ms)
-PUT /api/requests/REQ-001 200 0.469 ms - 323
-GET /api/requests/REQ-001 200 0.314 ms - 323
-✔ PUT status persists (7.3006ms)
-PUT /api/requests/REQ-999 404 0.501 ms - 65
-✔ PUT missing returns 404 (5.044ms)
-DELETE /api/requests/REQ-001 204 0.202 ms - -
-GET /api/requests/REQ-001 404 0.208 ms - 65
-✔ DELETE then GET is 404 (6.9665ms)
-GET /api/requests?status=%27%20OR%201%3D1%20-- 200 0.269 ms - 2
-✔ SQL injection remains data (4.7908ms)
-PUT /api/requests/REQ-001 400 0.346 ms - 95
-✔ invalid status is 400 (5.6118ms)
-GET /api/users 200 0.321 ms - 619
-✔ GET users exposes public fields and uses the initialized database (3.7624ms)
+GET /api/requests 200 1.821 ms - 2562
+✔ GET list returns array (22.5069ms)
+GET /api/requests 200 0.342 ms - 2562
+✔ GET list contains requesterName (5.1861ms)
+GET /api/requests/REQ-001 200 0.426 ms - 321
+✔ GET existing id (4.8514ms)
+GET /api/requests/REQ-999 404 0.268 ms - 65
+✔ GET missing id (4.4479ms)
+POST /api/requests 201 8.583 ms - 270
+✔ POST creates pending record (13.6317ms)
+POST /api/requests 400 0.365 ms - 514
+✔ POST incomplete rejected (4.5319ms)
+GET /api/requests 200 0.290 ms - 2562
+✔ CORS allowed origin (3.9012ms)
+PUT /api/requests/REQ-001 200 0.522 ms - 323
+GET /api/requests/REQ-001 200 0.298 ms - 323
+✔ PUT status persists (7.9199ms)
+PUT /api/requests/REQ-999 404 0.363 ms - 65
+✔ PUT missing returns 404 (4.2873ms)
+DELETE /api/requests/REQ-001 204 0.183 ms - -
+GET /api/requests/REQ-001 404 0.189 ms - 65
+✔ DELETE then GET is 404 (5.9215ms)
+GET /api/requests?status=%27%20OR%201%3D1%20-- 200 0.227 ms - 2
+✔ SQL injection remains data (4.5692ms)
+PUT /api/requests/REQ-001 400 0.253 ms - 95
+✔ invalid status is 400 (3.3803ms)
+GET /api/users 200 0.316 ms - 619
+✔ GET users exposes public fields and uses the initialized database (3.3366ms)
 ℹ tests 13
 ℹ suites 0
 ℹ pass 13
@@ -41,4 +41,4 @@ GET /api/users 200 0.321 ms - 619
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 392.5579
+ℹ duration_ms 353.3834
