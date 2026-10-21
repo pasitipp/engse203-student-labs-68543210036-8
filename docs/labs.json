@@ -14,6 +14,7 @@
     "resultType": "report",
     "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/2",
     "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-01/",
+    "resultUrl": "labs/week-01/",
     "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-01/labs/week-01/source",
     "hasPublish": true,
     "sourceEntries": 4
@@ -33,6 +34,7 @@
     "resultType": "web",
     "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/1",
     "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-02/",
+    "resultUrl": "labs/week-02/",
     "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-02/labs/week-02/source",
     "hasPublish": true,
     "sourceEntries": 12
@@ -52,6 +54,7 @@
     "resultType": "web",
     "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/3",
     "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-03/",
+    "resultUrl": "labs/week-03/",
     "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-03/labs/week-03/source",
     "hasPublish": true,
     "sourceEntries": 9
@@ -71,6 +74,7 @@
     "resultType": "web",
     "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/4",
     "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-04/",
+    "resultUrl": "labs/week-04/",
     "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-04/labs/week-04/source",
     "hasPublish": true,
     "sourceEntries": 12
@@ -90,6 +94,7 @@
     "resultType": "web",
     "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/8",
     "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-05/",
+    "resultUrl": "labs/week-05/",
     "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-05/labs/week-05/source",
     "hasPublish": true,
     "sourceEntries": 13
@@ -109,6 +114,7 @@
     "resultType": "report",
     "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/8",
     "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-06/",
+    "resultUrl": "labs/week-06/",
     "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-06/labs/week-06/source",
     "hasPublish": true,
     "sourceEntries": 9
@@ -128,6 +134,7 @@
     "resultType": "report",
     "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/8",
     "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-07/",
+    "resultUrl": "labs/week-07/",
     "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-07/labs/week-07/source",
     "hasPublish": true,
     "sourceEntries": 6
@@ -147,6 +154,7 @@
     "resultType": "report",
     "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/8",
     "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-09/",
+    "resultUrl": "labs/week-09/",
     "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-09/labs/week-09/source",
     "hasPublish": true,
     "sourceEntries": 7
@@ -166,6 +174,7 @@
     "resultType": "report",
     "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/8",
     "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-10/",
+    "resultUrl": "labs/week-10/",
     "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-10/labs/week-10/source",
     "hasPublish": true,
     "sourceEntries": 6
@@ -184,7 +193,9 @@
     "sourceRef": "lab/week-11",
     "resultType": "report",
     "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/8",
+    "deployUrl": "https://engse203-lab11-68543210036-8.onrender.com/",
     "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-11/",
+    "resultUrl": "https://engse203-lab11-68543210036-8.onrender.com/",
     "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-11/labs/week-11/source",
     "hasPublish": true,
     "sourceEntries": 16
@@ -203,7 +214,9 @@
     "sourceRef": "lab/week-12",
     "resultType": "report",
     "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/8",
+    "deployUrl": "https://engse203-lab12-68543210036-8.onrender.com/",
     "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-12/",
+    "resultUrl": "https://engse203-lab12-68543210036-8.onrender.com/",
     "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-12/labs/week-12/source",
     "hasPublish": true,
     "sourceEntries": 20
@@ -222,7 +235,9 @@
     "notes": "Automated results are in evidence/. See the linked LAB pull request for the reviewed work. Existing submission tags retain their original contents.",
     "resultType": "report",
     "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/7",
+    "deployUrl": "https://engse203-lab13-68543210036-8.onrender.com/",
     "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-13/",
+    "resultUrl": "https://engse203-lab13-68543210036-8.onrender.com/",
     "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-13/labs/week-13/source",
     "hasPublish": true,
     "sourceEntries": 20

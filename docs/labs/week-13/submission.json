@@ -12,7 +12,9 @@
   "notes": "Automated results are in evidence/. See the linked LAB pull request for the reviewed work. Existing submission tags retain their original contents.",
   "resultType": "report",
   "previousPullRequestUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/pull/7",
+  "deployUrl": "https://engse203-lab13-68543210036-8.onrender.com/",
   "pageUrl": "https://pasitipp.github.io/engse203-student-labs-68543210036-8/labs/week-13/",
+  "resultUrl": "https://engse203-lab13-68543210036-8.onrender.com/",
   "sourceUrl": "https://github.com/pasitipp/engse203-student-labs-68543210036-8/tree/lab%2Fweek-13/labs/week-13/source",
   "hasPublish": true,
   "sourceEntries": 20
