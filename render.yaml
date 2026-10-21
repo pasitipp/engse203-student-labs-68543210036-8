@@ -1,0 +1,49 @@
+# Three independent LAB services; Final T10 is managed in its own repository.
+services:
+  - type: web
+    name: engse203-lab11-68543210036-8
+    runtime: node
+    plan: free
+    region: singapore
+    branch: main
+    rootDir: labs/week-11/source
+    buildCommand: npm ci --include=dev --prefix frontend && npm run build --prefix frontend && npm ci --omit=dev --prefix api
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+  - type: web
+    name: engse203-lab12-68543210036-8
+    runtime: node
+    plan: free
+    region: singapore
+    branch: main
+    rootDir: labs/week-12/source
+    buildCommand: npm ci --include=dev --prefix frontend && npm run build --prefix frontend && npm ci --omit=dev --prefix api
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+  - type: web
+    name: engse203-lab13-68543210036-8
+    runtime: node
+    plan: free
+    region: singapore
+    branch: main
+    rootDir: labs/week-13/source
+    buildCommand: npm ci --include=dev --prefix frontend && npm run build --prefix frontend && npm ci --omit=dev --prefix api
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+      - key: JWT_SECRET
+        generateValue: true

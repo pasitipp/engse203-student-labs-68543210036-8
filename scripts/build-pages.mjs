@@ -53,16 +53,19 @@ for (const week of labs) {
   const sourceUrl = `${repoUrl}/tree/${ref}/labs/${week}/source`;
   const prUrl = validHttpUrl(metadata.pullRequestUrl);
   const pageUrl = `${pagesBase}/labs/${week}/`;
+  const resultUrl = ['week-11', 'week-12', 'week-13'].includes(week)
+    ? validHttpUrl(metadata.deployUrl) || `labs/${week}/`
+    : `labs/${week}/`;
   const sourceCount = (await meaningfulEntries(path.join(labRoot, "source"))).length;
-  const summary = { ...metadata, pageUrl, sourceUrl, hasPublish, sourceEntries: sourceCount };
+  const summary = { ...metadata, pageUrl, resultUrl, sourceUrl, hasPublish, sourceEntries: sourceCount };
   summaries.push(summary);
   await fs.writeFile(path.join(target, "submission.json"), `${JSON.stringify(summary, null, 2)}\n`, "utf8");
 
   cards.push(`<article class="lab-card" data-status="${escapeHtml(metadata.status)}">
     <div class="card-top"><span class="week">${escapeHtml(week)}</span><span class="status">${escapeHtml(statusLabels[metadata.status] ?? metadata.status)}</span></div>
     <h2>${escapeHtml(metadata.title)}</h2>
-    <p>Test: <strong>${escapeHtml(metadata.testStatus)}</strong> • ${metadata.resultType === 'report' || !hasPublish ? "Evidence report" : "Web output"}</p>
-    <div class="links"><a class="primary" href="labs/${escapeHtml(week)}/">View Result</a><a href="${escapeHtml(sourceUrl)}">Source</a>${prUrl ? `<a href="${escapeHtml(prUrl)}">Pull Request</a>` : ""}</div>
+    <p>Test: <strong>${escapeHtml(metadata.testStatus)}</strong> • ${resultUrl.startsWith('https://') ? "Cloud Web Service" : metadata.resultType === 'report' || !hasPublish ? "Evidence report" : "Web output"}</p>
+    <div class="links"><a class="primary" href="${escapeHtml(resultUrl)}">View Result</a><a href="${escapeHtml(sourceUrl)}">Source</a>${prUrl ? `<a href="${escapeHtml(prUrl)}">Pull Request</a>` : ""}</div>
     <small>${metadata.status === 'submitted' ? 'Version' : 'Previous submission'}: ${escapeHtml(metadata.submissionTag || "none — not submitted")}</small>
   </article>`);
 }
